@@ -1,0 +1,30 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity clockDivider is
+    Port ( clk : in STD_LOGIC;
+           reset : in STD_LOGIC;
+           clk_1Hz : out STD_LOGIC);
+end clockDivider;
+
+architecture Behavioral of clockDivider is
+    signal counter: integer := 0;
+    constant divisor: integer := 50000000;
+begin
+    process(clk, reset)
+    begin
+        if reset = '1' then
+            counter <= 0;
+            clk_1Hz <= '0';
+        elsif rising_edge(clk) then
+            if counter = divisor - 1 then
+                counter <= 0;
+                clk_1Hz <= not clk_1Hz;
+            else
+                counter <= counter + 1;
+            end if;
+        end if;
+    end process;
+end Behavioral;

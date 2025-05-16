@@ -1,0 +1,13 @@
+|work1
+A => Y~5.IN0
+A => Y~0.IN0
+B => Y~5.IN1
+B => Y~1.IN0
+C => Y~6.IN1
+C => Y~0.IN1
+C => Y~3.IN0
+D => Y~1.IN1
+D => Y~3.IN1
+Y <= Y~7.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,42 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+entity counter6 is
+	port( load, en, clrn, clk, Co2: in std_logic;
+		D : in std_logic_vector(2 downto 0);
+		Q : out std_logic_vector(2 downto 0);
+		Co : out std_logic
+	);
+end counter6;
+
+architecture behavioral of counter6 is
+    signal counter_reg : unsigned(2 downto 0) := "000";
+    signal ca :std_logic := '0';
+begin
+    process (clk, clrn,en)
+    begin
+        if clrn = '1' then
+            counter_reg <= "000";
+        elsif rising_edge(clk) then
+			if load = '1' then
+				counter_reg(0) <= D(0);
+				counter_reg(1) <= D(1);
+				counter_reg(2) <= D(2);
+            elsif en = '1' then
+				Co <= '1';
+				counter_reg <= counter_reg + 1;
+            else
+				Co <='0';
+            end if;
+            
+            if falling_edge(en) then
+				counter_reg <= counter_reg + 1;
+            end if;
+        end if;
+        if counter_reg = "110" then
+			counter_reg <= "000";
+        end if;
+    end process;
+
+    Q <= std_logic_vector(counter_reg);
+end behavioral;

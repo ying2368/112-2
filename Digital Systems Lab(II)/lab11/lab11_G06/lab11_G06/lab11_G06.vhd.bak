@@ -1,0 +1,38 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity lab11_G06 is
+	 port (	clk : in STD_LOGIC;
+		    enable : in STD_LOGIC;
+		    duty: in unsigned(2 downto 0);
+		    LED : out STD_LOGIC);
+end lab11_G06;
+
+architecture Behavioral of lab11_G06 is 
+    signal count : std_logic_vector(15 downto 0) := (others => '0');
+	constant period : integer := 64;
+begin
+	process(clk)
+	begin
+		if rising_edge(clk) then
+            if enable = '1' then
+                if count < period then
+                    count <= count + 1;
+                else
+                    count <= (others => '0');
+                end if;
+
+                if count >= (to_integer(duty) * (period / 8)) then --(to_integer(duty) * (period / 8))
+                    led <= '1';
+                else
+                    led <= '0';
+                end if;
+            else
+                led <= '0';
+                count <= (others => '0');
+            end if;
+        end if;
+    end process;
+end Behavioral;

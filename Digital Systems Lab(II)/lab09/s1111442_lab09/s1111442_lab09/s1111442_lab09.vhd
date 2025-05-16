@@ -1,0 +1,38 @@
+library ieee;
+use ieee.std_logic_1164.all;
+entity s1111442_lab09 is
+	port( load,clk,en,clrn : in std_logic;
+		Da : in std_logic_vector(3 downto 0);
+		Db : in std_logic_vector(2 downto 0);
+		Co : out std_logic;
+		qa : out std_logic_vector(3 downto 0);
+		qb : out std_logic_vector(2 downto 0)
+	);
+end s1111442_lab09;
+architecture Behavioral of s1111442_lab09 is
+component counter6
+	port (
+		load, en, clrn, clk : in std_logic;
+		D : in std_logic_vector(2 downto 0);
+		Q : out std_logic_vector(2 downto 0);
+		Co : out std_logic
+	);
+end component;
+component counter10
+	port (
+		load, en, clrn, clk : in std_logic;
+		D : in std_logic_vector(3 downto 0);
+		Q : out std_logic_vector(3 downto 0);
+		Co : out std_logic
+	);
+end component;
+signal counter10Co : std_logic;
+begin
+	inst3 : counter10
+	port map(load => load, clk => clk, en => en, clrn => clrn,
+			D => Da, Q => qa, Co => counter10Co);
+	inst : counter6
+	port map(load => load, clk => clk, en => counter10Co, clrn => clrn,
+			D => Db, Q => qb, Co => Co);
+			
+end Behavioral;

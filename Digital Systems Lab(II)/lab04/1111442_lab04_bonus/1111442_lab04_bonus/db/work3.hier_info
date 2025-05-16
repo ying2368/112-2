@@ -1,0 +1,22 @@
+|work3
+a0 => ~NO_FANOUT~
+a1 => y0~0.IN0
+a2 => y1~0.IN0
+a3 => y1~0.IN1
+a3 => y0~1.IN1
+a4 => y2~0.IN0
+a5 => y2~0.IN1
+a5 => y0~0.IN1
+a6 => y2~1.IN1
+a6 => y1~1.IN1
+a7 => y2~2.IN1
+a7 => y1~2.IN1
+a7 => y0~2.IN1
+en => y2~3.IN1
+en => y1~3.IN1
+en => y0~3.IN1
+y0 <= y0~3.DB_MAX_OUTPUT_PORT_TYPE
+y1 <= y1~3.DB_MAX_OUTPUT_PORT_TYPE
+y2 <= y2~3.DB_MAX_OUTPUT_PORT_TYPE
+
+

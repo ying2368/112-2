@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/user/Desktop/work4/lab02_4.bdf
+source_file = 1, C:/Users/user/Desktop/work4/db/lab02_4.cbx.xml
+design_name = lab02_4
+instance = comp, \pin_name2~output\, pin_name2~output, lab02_4, 1
+instance = comp, \pin_name3~output\, pin_name3~output, lab02_4, 1
+instance = comp, \pin_name4~output\, pin_name4~output, lab02_4, 1
+instance = comp, \pin_name5~output\, pin_name5~output, lab02_4, 1
+instance = comp, \i~input\, i~input, lab02_4, 1
+instance = comp, \A~input\, A~input, lab02_4, 1
+instance = comp, \B~input\, B~input, lab02_4, 1
+instance = comp, \inst7~0\, inst7~0, lab02_4, 1
+instance = comp, \inst7~1\, inst7~1, lab02_4, 1
+instance = comp, \inst7~2\, inst7~2, lab02_4, 1

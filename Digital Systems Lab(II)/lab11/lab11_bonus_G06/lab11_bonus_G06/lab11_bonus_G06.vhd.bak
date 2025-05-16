@@ -1,0 +1,67 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity lab11_bonus_G06 is
+    Port ( clk : in STD_LOGIC;
+           enable : in STD_LOGIC;
+           led : out STD_LOGIC);
+end lab11_bonus_G06;
+
+architecture Behavioral of lab11_bonus_G06 is
+
+    signal clk_count : STD_LOGIC_VECTOR(30 downto 0) := (others => '0');
+    signal pwm_count : STD_LOGIC_VECTOR(10 downto 0) := (others => '0');
+    signal duty : STD_LOGIC_VECTOR(10 downto 0) := (others => '0');
+    signal increase : STD_LOGIC := '1';
+
+begin
+
+    process(clk)
+    begin
+        if rising_edge(clk) then
+            if enable = '1' then
+                clk_count <= clk_count + 1;
+                
+                if clk_count = 50000 then 
+                    clk_count <= (others => '0');
+                    
+                    if increase = '1' then
+                        if duty = 999 then
+                            increase <= '0';
+                        else
+                            duty <= duty + 1;
+                        end if;
+                    else
+                        if duty = 0 then
+                            increase <= '1';
+                        else
+                            duty <= duty - 1;
+                        end if;
+                    end if;
+                    
+                end if;
+
+                pwm_count <= pwm_count + 1;
+                if pwm_count < duty then
+                    led <= '1';
+                else
+                    led <= '0';
+                end if;
+
+                if pwm_count = 1000 then
+                    pwm_count <= (others => '0');
+                end if;
+
+            else
+                led <= '0';
+                clk_count <= (others => '0');
+                pwm_count <= (others => '0');
+                duty <= (others => '0');
+                increase <= '1';
+            end if;
+        end if;
+    end process;
+
+end Behavioral;

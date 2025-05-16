@@ -1,0 +1,30 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity s1111442_lab05_bonus is
+    port (
+        Preset, Clear, Sin, CLK : in std_logic;
+        Q0, Q1, Q2, Q3 : out std_logic
+    );
+end entity s1111442_lab05_bonus;
+
+architecture ARCH of s1111442_lab05_bonus is
+    component myJKFF is
+        port (
+            J, K, CLK, Preset, Clear : in std_logic;
+            Q : out std_logic
+        );
+    end component;
+
+    signal tmpA, tmpB, tmpC, tmpD : std_logic;
+begin
+    JKFF0 : myJKFF port map(Sin, not Sin, CLK, Preset, Clear, tmpA);
+    JKFF1 : myJKFF port map(tmpA, not tmpA, CLK, Preset, Clear, tmpB);
+    JKFF2 : myJKFF port map(tmpB, not tmpB, CLK, Preset, Clear, tmpC);
+    JKFF3 : myJKFF port map(tmpC, not tmpC, CLK, Preset, Clear, tmpD);
+
+    Q0 <= tmpA;
+    Q1 <= tmpB;
+    Q2 <= tmpC;
+    Q3 <= tmpD;
+end ARCH;

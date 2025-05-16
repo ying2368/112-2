@@ -1,0 +1,91 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+10
+767
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Block5
+# storage
+db|lab03_2.(1).cnf
+db|lab03_2.(1).cnf
+# case_insensitive
+# source_file
+block5.bdf
+dd42051e76b7e126fbed38ad311d58
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Block5:inst
+Block5:inst1
+}
+# macro_sequence
+
+# end
+# entity
+lab03_2
+# storage
+db|lab03_2.(0).cnf
+db|lab03_2.(0).cnf
+# case_insensitive
+# source_file
+lab03_2.bdf
+4c8d7a736b42a6dc25ce3765b0d1cbff
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+Block3
+# storage
+db|lab03_2.(2).cnf
+db|lab03_2.(2).cnf
+# case_insensitive
+# source_file
+block3.bdf
+9831754f6d674244d97028eb2c3bfda
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Block5:inst|Block3:inst5
+Block5:inst|Block3:inst4
+Block5:inst|Block3:inst3
+Block5:inst|Block3:inst1
+Block5:inst1|Block3:inst5
+Block5:inst1|Block3:inst4
+Block5:inst1|Block3:inst3
+Block5:inst1|Block3:inst1
+}
+# macro_sequence
+
+# end
+# complete
+

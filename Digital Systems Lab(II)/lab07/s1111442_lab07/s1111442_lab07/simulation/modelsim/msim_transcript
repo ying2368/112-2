@@ -1,0 +1,50 @@
+# Reading C:/altera/91sp2/modelsim_ase/tcl/vsim/pref.tcl 
+# do s1111442_lab07_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\91sp2\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\91sp2\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {s1111442_lab07.vo}
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module s1111442_lab07
+# 
+# Top level modules:
+# 	s1111442_lab07
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/User/OneDrive/Desktop/2/work/s1111442_lab07 {C:/Users/User/OneDrive/Desktop/2/work/s1111442_lab07/test.v}
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module test
+# 
+# Top level modules:
+# 	test
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L stratixii_ver -L gate_work -L work -voptargs="+acc" test
+# vsim +transport_int_delays +transport_path_delays -L stratixii_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps test 
+# Loading work.test
+# Loading work.s1111442_lab07
+# Loading stratixii_ver.stratixii_io
+# Loading stratixii_ver.stratixii_io_register
+# Loading stratixii_ver.stratixii_io_latch
+# Loading stratixii_ver.stratixii_and1
+# Loading stratixii_ver.stratixii_mux21
+# Loading stratixii_ver.stratixii_asynch_io
+# Loading stratixii_ver.stratixii_lcell_comb
+# SDF 6.5b Compiler 2009.10 Oct  1 2009
+# 
+# Loading instances from s1111442_lab07_v.sdo
+# Loading timing data from s1111442_lab07_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Region: /test  File: C:/Users/User/OneDrive/Desktop/2/work/s1111442_lab07/test.v
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body
+# run 1 us

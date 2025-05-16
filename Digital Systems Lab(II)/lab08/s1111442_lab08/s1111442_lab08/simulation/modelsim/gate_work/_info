@@ -1,0 +1,35 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\User\OneDrive\Desktop\2\work\s1111442_lab08\simulation\modelsim
+vs1111442_lab08
+IPEz05Zh4N^cViH9[6>LKn1
+V<`[NTCeO6oz4H>Uze;LiP0
+w1714365686
+8s1111442_lab08.vo
+Fs1111442_lab08.vo
+L0 31
+Z1 OV;L;6.5b;42
+r1
+31
+Z2 o-vlog01compat -work work -O0
+!s100 mL8:@Bi`44:bWBBGoXg^S2
+!s85 0
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vtest
+!s100 Jj9zczS]hIH:NC_4b>h<V2
+INnhBT1?_c8n7^CgW[aIe43
+Vk<3<[f=78GX=_HO53D;7>3
+w1714365680
+8C:/Users/User/OneDrive/Desktop/2/work/s1111442_lab08/test.v
+FC:/Users/User/OneDrive/Desktop/2/work/s1111442_lab08/test.v
+L0 2
+R1
+r1
+!s85 0
+31
+!s101 -O0
+R2
+!s92 -vlog01compat -work work +incdir+C:/Users/User/OneDrive/Desktop/2/work/s1111442_lab08 -O0

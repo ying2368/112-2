@@ -1,0 +1,76 @@
+|s1111442_lab09
+load => counter10:inst3.load
+load => counter6:inst.load
+clk => counter10:inst3.clk
+clk => counter6:inst.clk
+en => counter10:inst3.en
+clrn => counter10:inst3.clrn
+clrn => counter6:inst.clrn
+Da[0] => counter10:inst3.D[0]
+Da[1] => counter10:inst3.D[1]
+Da[2] => counter10:inst3.D[2]
+Da[3] => counter10:inst3.D[3]
+Db[0] => counter6:inst.D[0]
+Db[1] => counter6:inst.D[1]
+Db[2] => counter6:inst.D[2]
+Co <= counter6:inst.Co
+qa[0] <= counter10:inst3.Q[0]
+qa[1] <= counter10:inst3.Q[1]
+qa[2] <= counter10:inst3.Q[2]
+qa[3] <= counter10:inst3.Q[3]
+qb[0] <= counter6:inst.Q[0]
+qb[1] <= counter6:inst.Q[1]
+qb[2] <= counter6:inst.Q[2]
+
+
+|s1111442_lab09|counter10:inst3
+load => counter_reg.OUTPUTSELECT
+load => counter_reg.OUTPUTSELECT
+load => counter_reg.OUTPUTSELECT
+load => counter_reg.OUTPUTSELECT
+en => counter_reg[0].ENA
+en => counter_reg[3].ENA
+en => counter_reg[2].ENA
+en => counter_reg[1].ENA
+clrn => counter_reg[3].IN1
+clk => counter_reg[0].CLK
+clk => counter_reg[1].CLK
+clk => counter_reg[2].CLK
+clk => counter_reg[3].CLK
+D[0] => counter_reg.DATAB
+D[1] => counter_reg.DATAB
+D[2] => counter_reg.DATAB
+D[3] => counter_reg.DATAB
+Q[0] <= counter_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= counter_reg[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= counter_reg[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= counter_reg[3].DB_MAX_OUTPUT_PORT_TYPE
+Co <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|s1111442_lab09|counter6:inst
+load => counter_reg.OUTPUTSELECT
+load => counter_reg.OUTPUTSELECT
+load => counter_reg.OUTPUTSELECT
+load => Co.OUTPUTSELECT
+load => ca.OUTPUTSELECT
+en => Co.DATAA
+en => ca.DATAA
+clrn => counter_reg[2].IN1
+clrn => ca.ENA
+clrn => Co~reg0.ENA
+clk => ca.CLK
+clk => Co~reg0.CLK
+clk => counter_reg[0].CLK
+clk => counter_reg[1].CLK
+clk => counter_reg[2].CLK
+Co2 => ~NO_FANOUT~
+D[0] => counter_reg.DATAB
+D[1] => counter_reg.DATAB
+D[2] => counter_reg.DATAB
+Q[0] <= counter_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= counter_reg[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= counter_reg[2].DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

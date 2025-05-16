@@ -1,0 +1,15 @@
+Library IEEE;
+use IEEE.std_logic_1164.all;
+
+Entity work1 is
+	Port (A,B,C,D: in std_logic;
+		Y: out std_logic);
+end work1;
+
+Architecture arch of work1 is
+Begin
+	Y <= (not A or not C) or
+		 (not B and D) or
+		 (not C and not D) or
+		 (A and B and C);
+end arch;

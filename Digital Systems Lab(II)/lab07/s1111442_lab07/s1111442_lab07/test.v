@@ -1,0 +1,35 @@
+`timescale 1ns/10ps
+
+module test;
+
+    reg [3:0] A, B;
+    reg [1:0] sel;
+    wire [4:0] aluo;
+    
+    s1111442_lab07 DUT (
+        .A(A),
+        .B(B),
+        .sel(sel),
+        .aluo(aluo)
+    );
+
+    initial begin
+        // ªì©l³]¸m
+        A <= 4'b0111;
+        B <= 4'b1000;
+        sel <= 2'b00;
+        
+        // ¼ÒÀÀ°j°é
+        repeat (10) begin
+            //#50000; // ¨C50000 ps
+            #50;
+            A <= A + 1;
+            B <= B + 1;
+            sel <= sel + 1;
+        end
+        
+        // µ²§ô¼ÒÀÀ
+        //$finish;
+    end
+
+endmodule

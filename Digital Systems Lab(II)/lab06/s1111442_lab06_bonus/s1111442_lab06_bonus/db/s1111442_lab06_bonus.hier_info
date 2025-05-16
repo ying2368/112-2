@@ -1,0 +1,22 @@
+|s1111442_lab06_bonus
+CLK => str_out[0]~reg0.CLK
+CLK => present_state~4.DATAIN
+CLK => current_state~5.DATAIN
+rst => present_state.s3~0.OUTPUTSELECT
+rst => present_state.s2~0.OUTPUTSELECT
+rst => present_state.s1~0.OUTPUTSELECT
+rst => present_state.s0~0.OUTPUTSELECT
+rst => current_state~9.DATAIN
+rst => str_out[0]~reg0.ENA
+Din => next_state.s1.DATAB
+Din => next_state.s2.DATAA
+Din => single_output~0.DATAB
+Din => Selector0.IN1
+Din => next_state.s3.DATAB
+Din => str_out[0]~reg0.DATAIN
+match <= single_output~0.DB_MAX_OUTPUT_PORT_TYPE
+str_out[2] <= str_out~1.DB_MAX_OUTPUT_PORT_TYPE
+str_out[1] <= str_out~0.DB_MAX_OUTPUT_PORT_TYPE
+str_out[0] <= str_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

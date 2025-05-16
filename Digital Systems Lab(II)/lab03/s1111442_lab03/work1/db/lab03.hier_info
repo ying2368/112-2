@@ -1,0 +1,66 @@
+|lab03
+S0 <= Block2:inst16.S
+A0 => Block2:inst16.A
+M => inst11.IN0
+M => Block2:inst16.Ci
+M => inst12.IN1
+M => inst13.IN1
+M => inst14.IN0
+B0 => inst11.IN1
+S1 <= Block2:inst17.S
+A1 => Block2:inst17.A
+B1 => inst12.IN0
+S2 <= Block2:inst18.S
+A2 => Block2:inst18.A
+B2 => inst13.IN0
+S3 <= Block2:inst19.S
+A3 => Block2:inst19.A
+B3 => inst14.IN1
+V <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+C <= Block2:inst19.C23
+
+
+|lab03|Block2:inst16
+C23 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst4.IN0
+Ci => inst5.IN1
+A => inst6.IN0
+A => inst22.IN1
+B => inst6.IN1
+B => inst22.IN0
+S <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab03|Block2:inst17
+C23 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst4.IN0
+Ci => inst5.IN1
+A => inst6.IN0
+A => inst22.IN1
+B => inst6.IN1
+B => inst22.IN0
+S <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab03|Block2:inst18
+C23 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst4.IN0
+Ci => inst5.IN1
+A => inst6.IN0
+A => inst22.IN1
+B => inst6.IN1
+B => inst22.IN0
+S <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab03|Block2:inst19
+C23 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst4.IN0
+Ci => inst5.IN1
+A => inst6.IN0
+A => inst22.IN1
+B => inst6.IN1
+B => inst22.IN0
+S <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+

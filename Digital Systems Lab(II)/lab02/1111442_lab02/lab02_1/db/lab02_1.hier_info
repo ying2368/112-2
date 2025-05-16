@@ -1,0 +1,34 @@
+|lab02_1
+pin_name <= inst47.DB_MAX_OUTPUT_PORT_TYPE
+enable => inst47.IN0
+enable => inst48.IN0
+enable => inst49.IN0
+enable => inst50.IN0
+enable => inst51.IN0
+enable => inst52.IN0
+enable => inst53.IN0
+enable => inst54.IN0
+A => inst.IN0
+A => inst33.IN0
+A => inst35.IN0
+A => inst37.IN0
+A => inst39.IN0
+B => inst30.IN0
+B => inst34.IN1
+B => inst35.IN1
+B => inst38.IN1
+B => inst39.IN1
+C => inst31.IN0
+C => inst36.IN2
+C => inst37.IN2
+C => inst38.IN2
+C => inst39.IN2
+pin_name40 <= inst48.DB_MAX_OUTPUT_PORT_TYPE
+pin_name41 <= inst49.DB_MAX_OUTPUT_PORT_TYPE
+pin_name42 <= inst50.DB_MAX_OUTPUT_PORT_TYPE
+pin_name43 <= inst51.DB_MAX_OUTPUT_PORT_TYPE
+pin_name44 <= inst52.DB_MAX_OUTPUT_PORT_TYPE
+pin_name45 <= inst53.DB_MAX_OUTPUT_PORT_TYPE
+pin_name46 <= inst54.DB_MAX_OUTPUT_PORT_TYPE
+
+

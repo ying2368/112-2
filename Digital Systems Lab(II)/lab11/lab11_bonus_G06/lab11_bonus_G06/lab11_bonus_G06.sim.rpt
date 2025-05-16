@@ -1,0 +1,907 @@
+Simulator report for lab11_bonus_G06
+Fri May 17 12:41:16 2024
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 373 nodes    ;
+; Simulation Coverage         ;       0.00 % ;
+; Total Number of Transitions ; 0            ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       0.00 % ;
+; Total nodes checked                                 ; 373          ;
+; Total output ports checked                          ; 373          ;
+; Total output ports with complete 1/0-value coverage ; 0            ;
+; Total output ports with no 1/0-value coverage       ; 373          ;
+; Total output ports with no 1-value coverage         ; 373          ;
+; Total output ports with no 0-value coverage         ; 373          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------+
+; Complete 1/0-Value Coverage                     ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                           ;
++--------------------------------+--------------------------------+------------------+
+; Node Name                      ; Output Port Name               ; Output Port Type ;
++--------------------------------+--------------------------------+------------------+
+; |lab11_bonus_G06|duty[0]       ; |lab11_bonus_G06|duty[0]       ; regout           ;
+; |lab11_bonus_G06|pwm_count[10] ; |lab11_bonus_G06|pwm_count[10] ; regout           ;
+; |lab11_bonus_G06|pwm_count[9]  ; |lab11_bonus_G06|pwm_count[9]  ; regout           ;
+; |lab11_bonus_G06|pwm_count[8]  ; |lab11_bonus_G06|pwm_count[8]  ; regout           ;
+; |lab11_bonus_G06|pwm_count[7]  ; |lab11_bonus_G06|pwm_count[7]  ; regout           ;
+; |lab11_bonus_G06|pwm_count[6]  ; |lab11_bonus_G06|pwm_count[6]  ; regout           ;
+; |lab11_bonus_G06|pwm_count[5]  ; |lab11_bonus_G06|pwm_count[5]  ; regout           ;
+; |lab11_bonus_G06|increase~0    ; |lab11_bonus_G06|increase~0    ; out              ;
+; |lab11_bonus_G06|duty~0        ; |lab11_bonus_G06|duty~0        ; out              ;
+; |lab11_bonus_G06|duty~1        ; |lab11_bonus_G06|duty~1        ; out              ;
+; |lab11_bonus_G06|duty~2        ; |lab11_bonus_G06|duty~2        ; out              ;
+; |lab11_bonus_G06|duty~3        ; |lab11_bonus_G06|duty~3        ; out              ;
+; |lab11_bonus_G06|duty~4        ; |lab11_bonus_G06|duty~4        ; out              ;
+; |lab11_bonus_G06|duty~5        ; |lab11_bonus_G06|duty~5        ; out              ;
+; |lab11_bonus_G06|duty~6        ; |lab11_bonus_G06|duty~6        ; out              ;
+; |lab11_bonus_G06|duty~7        ; |lab11_bonus_G06|duty~7        ; out              ;
+; |lab11_bonus_G06|duty~8        ; |lab11_bonus_G06|duty~8        ; out              ;
+; |lab11_bonus_G06|duty~9        ; |lab11_bonus_G06|duty~9        ; out              ;
+; |lab11_bonus_G06|duty~10       ; |lab11_bonus_G06|duty~10       ; out              ;
+; |lab11_bonus_G06|pwm_count[4]  ; |lab11_bonus_G06|pwm_count[4]  ; regout           ;
+; |lab11_bonus_G06|pwm_count[3]  ; |lab11_bonus_G06|pwm_count[3]  ; regout           ;
+; |lab11_bonus_G06|increase~1    ; |lab11_bonus_G06|increase~1    ; out              ;
+; |lab11_bonus_G06|duty~11       ; |lab11_bonus_G06|duty~11       ; out              ;
+; |lab11_bonus_G06|duty~12       ; |lab11_bonus_G06|duty~12       ; out              ;
+; |lab11_bonus_G06|duty~13       ; |lab11_bonus_G06|duty~13       ; out              ;
+; |lab11_bonus_G06|duty~14       ; |lab11_bonus_G06|duty~14       ; out              ;
+; |lab11_bonus_G06|duty~15       ; |lab11_bonus_G06|duty~15       ; out              ;
+; |lab11_bonus_G06|duty~16       ; |lab11_bonus_G06|duty~16       ; out              ;
+; |lab11_bonus_G06|duty~17       ; |lab11_bonus_G06|duty~17       ; out              ;
+; |lab11_bonus_G06|duty~18       ; |lab11_bonus_G06|duty~18       ; out              ;
+; |lab11_bonus_G06|duty~19       ; |lab11_bonus_G06|duty~19       ; out              ;
+; |lab11_bonus_G06|duty~20       ; |lab11_bonus_G06|duty~20       ; out              ;
+; |lab11_bonus_G06|duty~21       ; |lab11_bonus_G06|duty~21       ; out              ;
+; |lab11_bonus_G06|increase~2    ; |lab11_bonus_G06|increase~2    ; out              ;
+; |lab11_bonus_G06|duty~22       ; |lab11_bonus_G06|duty~22       ; out              ;
+; |lab11_bonus_G06|duty~23       ; |lab11_bonus_G06|duty~23       ; out              ;
+; |lab11_bonus_G06|duty~24       ; |lab11_bonus_G06|duty~24       ; out              ;
+; |lab11_bonus_G06|duty~25       ; |lab11_bonus_G06|duty~25       ; out              ;
+; |lab11_bonus_G06|duty~26       ; |lab11_bonus_G06|duty~26       ; out              ;
+; |lab11_bonus_G06|duty~27       ; |lab11_bonus_G06|duty~27       ; out              ;
+; |lab11_bonus_G06|duty~28       ; |lab11_bonus_G06|duty~28       ; out              ;
+; |lab11_bonus_G06|duty~29       ; |lab11_bonus_G06|duty~29       ; out              ;
+; |lab11_bonus_G06|duty~30       ; |lab11_bonus_G06|duty~30       ; out              ;
+; |lab11_bonus_G06|duty~31       ; |lab11_bonus_G06|duty~31       ; out              ;
+; |lab11_bonus_G06|duty~32       ; |lab11_bonus_G06|duty~32       ; out              ;
+; |lab11_bonus_G06|clk_count~0   ; |lab11_bonus_G06|clk_count~0   ; out              ;
+; |lab11_bonus_G06|clk_count~1   ; |lab11_bonus_G06|clk_count~1   ; out              ;
+; |lab11_bonus_G06|clk_count~2   ; |lab11_bonus_G06|clk_count~2   ; out              ;
+; |lab11_bonus_G06|clk_count~3   ; |lab11_bonus_G06|clk_count~3   ; out              ;
+; |lab11_bonus_G06|clk_count~4   ; |lab11_bonus_G06|clk_count~4   ; out              ;
+; |lab11_bonus_G06|clk_count~5   ; |lab11_bonus_G06|clk_count~5   ; out              ;
+; |lab11_bonus_G06|clk_count~6   ; |lab11_bonus_G06|clk_count~6   ; out              ;
+; |lab11_bonus_G06|clk_count~7   ; |lab11_bonus_G06|clk_count~7   ; out              ;
+; |lab11_bonus_G06|clk_count~8   ; |lab11_bonus_G06|clk_count~8   ; out              ;
+; |lab11_bonus_G06|clk_count~9   ; |lab11_bonus_G06|clk_count~9   ; out              ;
+; |lab11_bonus_G06|clk_count~10  ; |lab11_bonus_G06|clk_count~10  ; out              ;
+; |lab11_bonus_G06|clk_count~11  ; |lab11_bonus_G06|clk_count~11  ; out              ;
+; |lab11_bonus_G06|clk_count~12  ; |lab11_bonus_G06|clk_count~12  ; out              ;
+; |lab11_bonus_G06|clk_count~13  ; |lab11_bonus_G06|clk_count~13  ; out              ;
+; |lab11_bonus_G06|clk_count~14  ; |lab11_bonus_G06|clk_count~14  ; out              ;
+; |lab11_bonus_G06|clk_count~15  ; |lab11_bonus_G06|clk_count~15  ; out              ;
+; |lab11_bonus_G06|clk_count~16  ; |lab11_bonus_G06|clk_count~16  ; out              ;
+; |lab11_bonus_G06|clk_count~17  ; |lab11_bonus_G06|clk_count~17  ; out              ;
+; |lab11_bonus_G06|clk_count~18  ; |lab11_bonus_G06|clk_count~18  ; out              ;
+; |lab11_bonus_G06|clk_count~19  ; |lab11_bonus_G06|clk_count~19  ; out              ;
+; |lab11_bonus_G06|clk_count~20  ; |lab11_bonus_G06|clk_count~20  ; out              ;
+; |lab11_bonus_G06|clk_count~21  ; |lab11_bonus_G06|clk_count~21  ; out              ;
+; |lab11_bonus_G06|clk_count~22  ; |lab11_bonus_G06|clk_count~22  ; out              ;
+; |lab11_bonus_G06|clk_count~23  ; |lab11_bonus_G06|clk_count~23  ; out              ;
+; |lab11_bonus_G06|clk_count~24  ; |lab11_bonus_G06|clk_count~24  ; out              ;
+; |lab11_bonus_G06|clk_count~25  ; |lab11_bonus_G06|clk_count~25  ; out              ;
+; |lab11_bonus_G06|clk_count~26  ; |lab11_bonus_G06|clk_count~26  ; out              ;
+; |lab11_bonus_G06|clk_count~27  ; |lab11_bonus_G06|clk_count~27  ; out              ;
+; |lab11_bonus_G06|clk_count~28  ; |lab11_bonus_G06|clk_count~28  ; out              ;
+; |lab11_bonus_G06|clk_count~29  ; |lab11_bonus_G06|clk_count~29  ; out              ;
+; |lab11_bonus_G06|clk_count~30  ; |lab11_bonus_G06|clk_count~30  ; out              ;
+; |lab11_bonus_G06|increase~3    ; |lab11_bonus_G06|increase~3    ; out              ;
+; |lab11_bonus_G06|duty~33       ; |lab11_bonus_G06|duty~33       ; out              ;
+; |lab11_bonus_G06|duty~34       ; |lab11_bonus_G06|duty~34       ; out              ;
+; |lab11_bonus_G06|duty~35       ; |lab11_bonus_G06|duty~35       ; out              ;
+; |lab11_bonus_G06|duty~36       ; |lab11_bonus_G06|duty~36       ; out              ;
+; |lab11_bonus_G06|duty~37       ; |lab11_bonus_G06|duty~37       ; out              ;
+; |lab11_bonus_G06|duty~38       ; |lab11_bonus_G06|duty~38       ; out              ;
+; |lab11_bonus_G06|duty~39       ; |lab11_bonus_G06|duty~39       ; out              ;
+; |lab11_bonus_G06|duty~40       ; |lab11_bonus_G06|duty~40       ; out              ;
+; |lab11_bonus_G06|duty~41       ; |lab11_bonus_G06|duty~41       ; out              ;
+; |lab11_bonus_G06|duty~42       ; |lab11_bonus_G06|duty~42       ; out              ;
+; |lab11_bonus_G06|duty~43       ; |lab11_bonus_G06|duty~43       ; out              ;
+; |lab11_bonus_G06|pwm_count[2]  ; |lab11_bonus_G06|pwm_count[2]  ; regout           ;
+; |lab11_bonus_G06|pwm_count[1]  ; |lab11_bonus_G06|pwm_count[1]  ; regout           ;
+; |lab11_bonus_G06|pwm_count[0]  ; |lab11_bonus_G06|pwm_count[0]  ; regout           ;
+; |lab11_bonus_G06|led~reg0      ; |lab11_bonus_G06|led~reg0      ; regout           ;
+; |lab11_bonus_G06|pwm_count~0   ; |lab11_bonus_G06|pwm_count~0   ; out              ;
+; |lab11_bonus_G06|pwm_count~1   ; |lab11_bonus_G06|pwm_count~1   ; out              ;
+; |lab11_bonus_G06|pwm_count~2   ; |lab11_bonus_G06|pwm_count~2   ; out              ;
+; |lab11_bonus_G06|pwm_count~3   ; |lab11_bonus_G06|pwm_count~3   ; out              ;
+; |lab11_bonus_G06|pwm_count~4   ; |lab11_bonus_G06|pwm_count~4   ; out              ;
+; |lab11_bonus_G06|pwm_count~5   ; |lab11_bonus_G06|pwm_count~5   ; out              ;
+; |lab11_bonus_G06|pwm_count~6   ; |lab11_bonus_G06|pwm_count~6   ; out              ;
+; |lab11_bonus_G06|pwm_count~7   ; |lab11_bonus_G06|pwm_count~7   ; out              ;
+; |lab11_bonus_G06|pwm_count~8   ; |lab11_bonus_G06|pwm_count~8   ; out              ;
+; |lab11_bonus_G06|pwm_count~9   ; |lab11_bonus_G06|pwm_count~9   ; out              ;
+; |lab11_bonus_G06|pwm_count~10  ; |lab11_bonus_G06|pwm_count~10  ; out              ;
+; |lab11_bonus_G06|clk_count~31  ; |lab11_bonus_G06|clk_count~31  ; out              ;
+; |lab11_bonus_G06|clk_count~32  ; |lab11_bonus_G06|clk_count~32  ; out              ;
+; |lab11_bonus_G06|clk_count~33  ; |lab11_bonus_G06|clk_count~33  ; out              ;
+; |lab11_bonus_G06|clk_count~34  ; |lab11_bonus_G06|clk_count~34  ; out              ;
+; |lab11_bonus_G06|clk_count~35  ; |lab11_bonus_G06|clk_count~35  ; out              ;
+; |lab11_bonus_G06|clk_count~36  ; |lab11_bonus_G06|clk_count~36  ; out              ;
+; |lab11_bonus_G06|clk_count~37  ; |lab11_bonus_G06|clk_count~37  ; out              ;
+; |lab11_bonus_G06|clk_count~38  ; |lab11_bonus_G06|clk_count~38  ; out              ;
+; |lab11_bonus_G06|clk_count~39  ; |lab11_bonus_G06|clk_count~39  ; out              ;
+; |lab11_bonus_G06|clk_count~40  ; |lab11_bonus_G06|clk_count~40  ; out              ;
+; |lab11_bonus_G06|clk_count~41  ; |lab11_bonus_G06|clk_count~41  ; out              ;
+; |lab11_bonus_G06|clk_count~42  ; |lab11_bonus_G06|clk_count~42  ; out              ;
+; |lab11_bonus_G06|clk_count~43  ; |lab11_bonus_G06|clk_count~43  ; out              ;
+; |lab11_bonus_G06|clk_count~44  ; |lab11_bonus_G06|clk_count~44  ; out              ;
+; |lab11_bonus_G06|clk_count~45  ; |lab11_bonus_G06|clk_count~45  ; out              ;
+; |lab11_bonus_G06|clk_count~46  ; |lab11_bonus_G06|clk_count~46  ; out              ;
+; |lab11_bonus_G06|clk_count~47  ; |lab11_bonus_G06|clk_count~47  ; out              ;
+; |lab11_bonus_G06|clk_count~48  ; |lab11_bonus_G06|clk_count~48  ; out              ;
+; |lab11_bonus_G06|clk_count~49  ; |lab11_bonus_G06|clk_count~49  ; out              ;
+; |lab11_bonus_G06|clk_count~50  ; |lab11_bonus_G06|clk_count~50  ; out              ;
+; |lab11_bonus_G06|clk_count~51  ; |lab11_bonus_G06|clk_count~51  ; out              ;
+; |lab11_bonus_G06|clk_count~52  ; |lab11_bonus_G06|clk_count~52  ; out              ;
+; |lab11_bonus_G06|clk_count~53  ; |lab11_bonus_G06|clk_count~53  ; out              ;
+; |lab11_bonus_G06|clk_count~54  ; |lab11_bonus_G06|clk_count~54  ; out              ;
+; |lab11_bonus_G06|clk_count~55  ; |lab11_bonus_G06|clk_count~55  ; out              ;
+; |lab11_bonus_G06|clk_count~56  ; |lab11_bonus_G06|clk_count~56  ; out              ;
+; |lab11_bonus_G06|clk_count~57  ; |lab11_bonus_G06|clk_count~57  ; out              ;
+; |lab11_bonus_G06|clk_count~58  ; |lab11_bonus_G06|clk_count~58  ; out              ;
+; |lab11_bonus_G06|clk_count~59  ; |lab11_bonus_G06|clk_count~59  ; out              ;
+; |lab11_bonus_G06|clk_count~60  ; |lab11_bonus_G06|clk_count~60  ; out              ;
+; |lab11_bonus_G06|clk_count~61  ; |lab11_bonus_G06|clk_count~61  ; out              ;
+; |lab11_bonus_G06|increase~4    ; |lab11_bonus_G06|increase~4    ; out              ;
+; |lab11_bonus_G06|duty~44       ; |lab11_bonus_G06|duty~44       ; out              ;
+; |lab11_bonus_G06|duty~45       ; |lab11_bonus_G06|duty~45       ; out              ;
+; |lab11_bonus_G06|duty~46       ; |lab11_bonus_G06|duty~46       ; out              ;
+; |lab11_bonus_G06|duty~47       ; |lab11_bonus_G06|duty~47       ; out              ;
+; |lab11_bonus_G06|duty~48       ; |lab11_bonus_G06|duty~48       ; out              ;
+; |lab11_bonus_G06|duty~49       ; |lab11_bonus_G06|duty~49       ; out              ;
+; |lab11_bonus_G06|duty~50       ; |lab11_bonus_G06|duty~50       ; out              ;
+; |lab11_bonus_G06|duty~51       ; |lab11_bonus_G06|duty~51       ; out              ;
+; |lab11_bonus_G06|duty~52       ; |lab11_bonus_G06|duty~52       ; out              ;
+; |lab11_bonus_G06|duty~53       ; |lab11_bonus_G06|duty~53       ; out              ;
+; |lab11_bonus_G06|duty~54       ; |lab11_bonus_G06|duty~54       ; out              ;
+; |lab11_bonus_G06|pwm_count~11  ; |lab11_bonus_G06|pwm_count~11  ; out              ;
+; |lab11_bonus_G06|pwm_count~12  ; |lab11_bonus_G06|pwm_count~12  ; out              ;
+; |lab11_bonus_G06|pwm_count~13  ; |lab11_bonus_G06|pwm_count~13  ; out              ;
+; |lab11_bonus_G06|pwm_count~14  ; |lab11_bonus_G06|pwm_count~14  ; out              ;
+; |lab11_bonus_G06|pwm_count~15  ; |lab11_bonus_G06|pwm_count~15  ; out              ;
+; |lab11_bonus_G06|pwm_count~16  ; |lab11_bonus_G06|pwm_count~16  ; out              ;
+; |lab11_bonus_G06|pwm_count~17  ; |lab11_bonus_G06|pwm_count~17  ; out              ;
+; |lab11_bonus_G06|pwm_count~18  ; |lab11_bonus_G06|pwm_count~18  ; out              ;
+; |lab11_bonus_G06|pwm_count~19  ; |lab11_bonus_G06|pwm_count~19  ; out              ;
+; |lab11_bonus_G06|pwm_count~20  ; |lab11_bonus_G06|pwm_count~20  ; out              ;
+; |lab11_bonus_G06|pwm_count~21  ; |lab11_bonus_G06|pwm_count~21  ; out              ;
+; |lab11_bonus_G06|led~0         ; |lab11_bonus_G06|led~0         ; out              ;
+; |lab11_bonus_G06|duty[1]       ; |lab11_bonus_G06|duty[1]       ; regout           ;
+; |lab11_bonus_G06|duty[2]       ; |lab11_bonus_G06|duty[2]       ; regout           ;
+; |lab11_bonus_G06|duty[3]       ; |lab11_bonus_G06|duty[3]       ; regout           ;
+; |lab11_bonus_G06|duty[4]       ; |lab11_bonus_G06|duty[4]       ; regout           ;
+; |lab11_bonus_G06|duty[5]       ; |lab11_bonus_G06|duty[5]       ; regout           ;
+; |lab11_bonus_G06|duty[6]       ; |lab11_bonus_G06|duty[6]       ; regout           ;
+; |lab11_bonus_G06|duty[7]       ; |lab11_bonus_G06|duty[7]       ; regout           ;
+; |lab11_bonus_G06|duty[8]       ; |lab11_bonus_G06|duty[8]       ; regout           ;
+; |lab11_bonus_G06|duty[9]       ; |lab11_bonus_G06|duty[9]       ; regout           ;
+; |lab11_bonus_G06|duty[10]      ; |lab11_bonus_G06|duty[10]      ; regout           ;
+; |lab11_bonus_G06|increase      ; |lab11_bonus_G06|increase      ; regout           ;
+; |lab11_bonus_G06|clk_count[0]  ; |lab11_bonus_G06|clk_count[0]  ; regout           ;
+; |lab11_bonus_G06|clk_count[1]  ; |lab11_bonus_G06|clk_count[1]  ; regout           ;
+; |lab11_bonus_G06|clk_count[2]  ; |lab11_bonus_G06|clk_count[2]  ; regout           ;
+; |lab11_bonus_G06|clk_count[3]  ; |lab11_bonus_G06|clk_count[3]  ; regout           ;
+; |lab11_bonus_G06|clk_count[4]  ; |lab11_bonus_G06|clk_count[4]  ; regout           ;
+; |lab11_bonus_G06|clk_count[5]  ; |lab11_bonus_G06|clk_count[5]  ; regout           ;
+; |lab11_bonus_G06|clk_count[6]  ; |lab11_bonus_G06|clk_count[6]  ; regout           ;
+; |lab11_bonus_G06|clk_count[7]  ; |lab11_bonus_G06|clk_count[7]  ; regout           ;
+; |lab11_bonus_G06|clk_count[8]  ; |lab11_bonus_G06|clk_count[8]  ; regout           ;
+; |lab11_bonus_G06|clk_count[9]  ; |lab11_bonus_G06|clk_count[9]  ; regout           ;
+; |lab11_bonus_G06|clk_count[10] ; |lab11_bonus_G06|clk_count[10] ; regout           ;
+; |lab11_bonus_G06|clk_count[11] ; |lab11_bonus_G06|clk_count[11] ; regout           ;
+; |lab11_bonus_G06|clk_count[12] ; |lab11_bonus_G06|clk_count[12] ; regout           ;
+; |lab11_bonus_G06|clk_count[13] ; |lab11_bonus_G06|clk_count[13] ; regout           ;
+; |lab11_bonus_G06|clk_count[14] ; |lab11_bonus_G06|clk_count[14] ; regout           ;
+; |lab11_bonus_G06|clk_count[15] ; |lab11_bonus_G06|clk_count[15] ; regout           ;
+; |lab11_bonus_G06|clk_count[16] ; |lab11_bonus_G06|clk_count[16] ; regout           ;
+; |lab11_bonus_G06|clk_count[17] ; |lab11_bonus_G06|clk_count[17] ; regout           ;
+; |lab11_bonus_G06|clk_count[18] ; |lab11_bonus_G06|clk_count[18] ; regout           ;
+; |lab11_bonus_G06|clk_count[19] ; |lab11_bonus_G06|clk_count[19] ; regout           ;
+; |lab11_bonus_G06|clk_count[20] ; |lab11_bonus_G06|clk_count[20] ; regout           ;
+; |lab11_bonus_G06|clk_count[21] ; |lab11_bonus_G06|clk_count[21] ; regout           ;
+; |lab11_bonus_G06|clk_count[22] ; |lab11_bonus_G06|clk_count[22] ; regout           ;
+; |lab11_bonus_G06|clk_count[23] ; |lab11_bonus_G06|clk_count[23] ; regout           ;
+; |lab11_bonus_G06|clk_count[24] ; |lab11_bonus_G06|clk_count[24] ; regout           ;
+; |lab11_bonus_G06|clk_count[25] ; |lab11_bonus_G06|clk_count[25] ; regout           ;
+; |lab11_bonus_G06|clk_count[26] ; |lab11_bonus_G06|clk_count[26] ; regout           ;
+; |lab11_bonus_G06|clk_count[27] ; |lab11_bonus_G06|clk_count[27] ; regout           ;
+; |lab11_bonus_G06|clk_count[28] ; |lab11_bonus_G06|clk_count[28] ; regout           ;
+; |lab11_bonus_G06|clk_count[29] ; |lab11_bonus_G06|clk_count[29] ; regout           ;
+; |lab11_bonus_G06|clk_count[30] ; |lab11_bonus_G06|clk_count[30] ; regout           ;
+; |lab11_bonus_G06|clk           ; |lab11_bonus_G06|clk           ; out              ;
+; |lab11_bonus_G06|enable        ; |lab11_bonus_G06|enable        ; out              ;
+; |lab11_bonus_G06|led           ; |lab11_bonus_G06|led           ; pin_out          ;
+; |lab11_bonus_G06|LessThan0~0   ; |lab11_bonus_G06|LessThan0~0   ; out0             ;
+; |lab11_bonus_G06|LessThan0~1   ; |lab11_bonus_G06|LessThan0~1   ; out0             ;
+; |lab11_bonus_G06|LessThan0~2   ; |lab11_bonus_G06|LessThan0~2   ; out0             ;
+; |lab11_bonus_G06|LessThan0~3   ; |lab11_bonus_G06|LessThan0~3   ; out0             ;
+; |lab11_bonus_G06|LessThan0~4   ; |lab11_bonus_G06|LessThan0~4   ; out0             ;
+; |lab11_bonus_G06|LessThan0~5   ; |lab11_bonus_G06|LessThan0~5   ; out0             ;
+; |lab11_bonus_G06|LessThan0~6   ; |lab11_bonus_G06|LessThan0~6   ; out0             ;
+; |lab11_bonus_G06|LessThan0~7   ; |lab11_bonus_G06|LessThan0~7   ; out0             ;
+; |lab11_bonus_G06|LessThan0~8   ; |lab11_bonus_G06|LessThan0~8   ; out0             ;
+; |lab11_bonus_G06|LessThan0~9   ; |lab11_bonus_G06|LessThan0~9   ; out0             ;
+; |lab11_bonus_G06|LessThan0~10  ; |lab11_bonus_G06|LessThan0~10  ; out0             ;
+; |lab11_bonus_G06|LessThan0~11  ; |lab11_bonus_G06|LessThan0~11  ; out0             ;
+; |lab11_bonus_G06|LessThan0~12  ; |lab11_bonus_G06|LessThan0~12  ; out0             ;
+; |lab11_bonus_G06|LessThan0~13  ; |lab11_bonus_G06|LessThan0~13  ; out0             ;
+; |lab11_bonus_G06|LessThan0~14  ; |lab11_bonus_G06|LessThan0~14  ; out0             ;
+; |lab11_bonus_G06|LessThan0~15  ; |lab11_bonus_G06|LessThan0~15  ; out0             ;
+; |lab11_bonus_G06|LessThan0~16  ; |lab11_bonus_G06|LessThan0~16  ; out0             ;
+; |lab11_bonus_G06|LessThan0~17  ; |lab11_bonus_G06|LessThan0~17  ; out0             ;
+; |lab11_bonus_G06|LessThan0~18  ; |lab11_bonus_G06|LessThan0~18  ; out0             ;
+; |lab11_bonus_G06|LessThan0~19  ; |lab11_bonus_G06|LessThan0~19  ; out0             ;
+; |lab11_bonus_G06|LessThan0~20  ; |lab11_bonus_G06|LessThan0~20  ; out0             ;
+; |lab11_bonus_G06|LessThan0~21  ; |lab11_bonus_G06|LessThan0~21  ; out0             ;
+; |lab11_bonus_G06|LessThan0~22  ; |lab11_bonus_G06|LessThan0~22  ; out0             ;
+; |lab11_bonus_G06|LessThan0~23  ; |lab11_bonus_G06|LessThan0~23  ; out0             ;
+; |lab11_bonus_G06|LessThan0~24  ; |lab11_bonus_G06|LessThan0~24  ; out0             ;
+; |lab11_bonus_G06|LessThan0~25  ; |lab11_bonus_G06|LessThan0~25  ; out0             ;
+; |lab11_bonus_G06|LessThan0~26  ; |lab11_bonus_G06|LessThan0~26  ; out0             ;
+; |lab11_bonus_G06|LessThan0~27  ; |lab11_bonus_G06|LessThan0~27  ; out0             ;
+; |lab11_bonus_G06|LessThan0~28  ; |lab11_bonus_G06|LessThan0~28  ; out0             ;
+; |lab11_bonus_G06|LessThan0~29  ; |lab11_bonus_G06|LessThan0~29  ; out0             ;
+; |lab11_bonus_G06|LessThan0~30  ; |lab11_bonus_G06|LessThan0~30  ; out0             ;
+; |lab11_bonus_G06|LessThan0~31  ; |lab11_bonus_G06|LessThan0~31  ; out0             ;
+; |lab11_bonus_G06|LessThan0~32  ; |lab11_bonus_G06|LessThan0~32  ; out0             ;
+; |lab11_bonus_G06|LessThan0~33  ; |lab11_bonus_G06|LessThan0~33  ; out0             ;
+; |lab11_bonus_G06|LessThan0~34  ; |lab11_bonus_G06|LessThan0~34  ; out0             ;
+; |lab11_bonus_G06|LessThan0~35  ; |lab11_bonus_G06|LessThan0~35  ; out0             ;
+; |lab11_bonus_G06|LessThan0~36  ; |lab11_bonus_G06|LessThan0~36  ; out0             ;
+; |lab11_bonus_G06|LessThan0~37  ; |lab11_bonus_G06|LessThan0~37  ; out0             ;
+; |lab11_bonus_G06|LessThan0~38  ; |lab11_bonus_G06|LessThan0~38  ; out0             ;
+; |lab11_bonus_G06|LessThan0~39  ; |lab11_bonus_G06|LessThan0~39  ; out0             ;
+; |lab11_bonus_G06|LessThan0~40  ; |lab11_bonus_G06|LessThan0~40  ; out0             ;
+; |lab11_bonus_G06|Add0~0        ; |lab11_bonus_G06|Add0~0        ; out0             ;
+; |lab11_bonus_G06|Add0~1        ; |lab11_bonus_G06|Add0~1        ; out0             ;
+; |lab11_bonus_G06|Add0~2        ; |lab11_bonus_G06|Add0~2        ; out0             ;
+; |lab11_bonus_G06|Add0~3        ; |lab11_bonus_G06|Add0~3        ; out0             ;
+; |lab11_bonus_G06|Add0~4        ; |lab11_bonus_G06|Add0~4        ; out0             ;
+; |lab11_bonus_G06|Add0~5        ; |lab11_bonus_G06|Add0~5        ; out0             ;
+; |lab11_bonus_G06|Add0~6        ; |lab11_bonus_G06|Add0~6        ; out0             ;
+; |lab11_bonus_G06|Add0~7        ; |lab11_bonus_G06|Add0~7        ; out0             ;
+; |lab11_bonus_G06|Add0~8        ; |lab11_bonus_G06|Add0~8        ; out0             ;
+; |lab11_bonus_G06|Add0~9        ; |lab11_bonus_G06|Add0~9        ; out0             ;
+; |lab11_bonus_G06|Add0~10       ; |lab11_bonus_G06|Add0~10       ; out0             ;
+; |lab11_bonus_G06|Add0~11       ; |lab11_bonus_G06|Add0~11       ; out0             ;
+; |lab11_bonus_G06|Add0~12       ; |lab11_bonus_G06|Add0~12       ; out0             ;
+; |lab11_bonus_G06|Add0~13       ; |lab11_bonus_G06|Add0~13       ; out0             ;
+; |lab11_bonus_G06|Add0~14       ; |lab11_bonus_G06|Add0~14       ; out0             ;
+; |lab11_bonus_G06|Add0~15       ; |lab11_bonus_G06|Add0~15       ; out0             ;
+; |lab11_bonus_G06|Add0~16       ; |lab11_bonus_G06|Add0~16       ; out0             ;
+; |lab11_bonus_G06|Add0~17       ; |lab11_bonus_G06|Add0~17       ; out0             ;
+; |lab11_bonus_G06|Add0~18       ; |lab11_bonus_G06|Add0~18       ; out0             ;
+; |lab11_bonus_G06|Add0~19       ; |lab11_bonus_G06|Add0~19       ; out0             ;
+; |lab11_bonus_G06|Add0~20       ; |lab11_bonus_G06|Add0~20       ; out0             ;
+; |lab11_bonus_G06|Add0~21       ; |lab11_bonus_G06|Add0~21       ; out0             ;
+; |lab11_bonus_G06|Add0~22       ; |lab11_bonus_G06|Add0~22       ; out0             ;
+; |lab11_bonus_G06|Add0~23       ; |lab11_bonus_G06|Add0~23       ; out0             ;
+; |lab11_bonus_G06|Add0~24       ; |lab11_bonus_G06|Add0~24       ; out0             ;
+; |lab11_bonus_G06|Add0~25       ; |lab11_bonus_G06|Add0~25       ; out0             ;
+; |lab11_bonus_G06|Add0~26       ; |lab11_bonus_G06|Add0~26       ; out0             ;
+; |lab11_bonus_G06|Add0~27       ; |lab11_bonus_G06|Add0~27       ; out0             ;
+; |lab11_bonus_G06|Add0~28       ; |lab11_bonus_G06|Add0~28       ; out0             ;
+; |lab11_bonus_G06|Add0~29       ; |lab11_bonus_G06|Add0~29       ; out0             ;
+; |lab11_bonus_G06|Add0~30       ; |lab11_bonus_G06|Add0~30       ; out0             ;
+; |lab11_bonus_G06|Add0~31       ; |lab11_bonus_G06|Add0~31       ; out0             ;
+; |lab11_bonus_G06|Add0~32       ; |lab11_bonus_G06|Add0~32       ; out0             ;
+; |lab11_bonus_G06|Add0~33       ; |lab11_bonus_G06|Add0~33       ; out0             ;
+; |lab11_bonus_G06|Add0~34       ; |lab11_bonus_G06|Add0~34       ; out0             ;
+; |lab11_bonus_G06|Add0~35       ; |lab11_bonus_G06|Add0~35       ; out0             ;
+; |lab11_bonus_G06|Add0~36       ; |lab11_bonus_G06|Add0~36       ; out0             ;
+; |lab11_bonus_G06|Add0~37       ; |lab11_bonus_G06|Add0~37       ; out0             ;
+; |lab11_bonus_G06|Add0~38       ; |lab11_bonus_G06|Add0~38       ; out0             ;
+; |lab11_bonus_G06|Add0~39       ; |lab11_bonus_G06|Add0~39       ; out0             ;
+; |lab11_bonus_G06|Add0~40       ; |lab11_bonus_G06|Add0~40       ; out0             ;
+; |lab11_bonus_G06|Add0~41       ; |lab11_bonus_G06|Add0~41       ; out0             ;
+; |lab11_bonus_G06|Add0~42       ; |lab11_bonus_G06|Add0~42       ; out0             ;
+; |lab11_bonus_G06|Add0~43       ; |lab11_bonus_G06|Add0~43       ; out0             ;
+; |lab11_bonus_G06|Add0~44       ; |lab11_bonus_G06|Add0~44       ; out0             ;
+; |lab11_bonus_G06|Add0~45       ; |lab11_bonus_G06|Add0~45       ; out0             ;
+; |lab11_bonus_G06|Add0~46       ; |lab11_bonus_G06|Add0~46       ; out0             ;
+; |lab11_bonus_G06|Add0~47       ; |lab11_bonus_G06|Add0~47       ; out0             ;
+; |lab11_bonus_G06|Add0~48       ; |lab11_bonus_G06|Add0~48       ; out0             ;
+; |lab11_bonus_G06|Add0~49       ; |lab11_bonus_G06|Add0~49       ; out0             ;
+; |lab11_bonus_G06|Add0~50       ; |lab11_bonus_G06|Add0~50       ; out0             ;
+; |lab11_bonus_G06|Add0~51       ; |lab11_bonus_G06|Add0~51       ; out0             ;
+; |lab11_bonus_G06|Add0~52       ; |lab11_bonus_G06|Add0~52       ; out0             ;
+; |lab11_bonus_G06|Add0~53       ; |lab11_bonus_G06|Add0~53       ; out0             ;
+; |lab11_bonus_G06|Add0~54       ; |lab11_bonus_G06|Add0~54       ; out0             ;
+; |lab11_bonus_G06|Add0~55       ; |lab11_bonus_G06|Add0~55       ; out0             ;
+; |lab11_bonus_G06|Add0~56       ; |lab11_bonus_G06|Add0~56       ; out0             ;
+; |lab11_bonus_G06|Add0~57       ; |lab11_bonus_G06|Add0~57       ; out0             ;
+; |lab11_bonus_G06|Add0~58       ; |lab11_bonus_G06|Add0~58       ; out0             ;
+; |lab11_bonus_G06|Add1~0        ; |lab11_bonus_G06|Add1~0        ; out0             ;
+; |lab11_bonus_G06|Add1~1        ; |lab11_bonus_G06|Add1~1        ; out0             ;
+; |lab11_bonus_G06|Add1~2        ; |lab11_bonus_G06|Add1~2        ; out0             ;
+; |lab11_bonus_G06|Add1~3        ; |lab11_bonus_G06|Add1~3        ; out0             ;
+; |lab11_bonus_G06|Add1~4        ; |lab11_bonus_G06|Add1~4        ; out0             ;
+; |lab11_bonus_G06|Add1~5        ; |lab11_bonus_G06|Add1~5        ; out0             ;
+; |lab11_bonus_G06|Add1~6        ; |lab11_bonus_G06|Add1~6        ; out0             ;
+; |lab11_bonus_G06|Add1~7        ; |lab11_bonus_G06|Add1~7        ; out0             ;
+; |lab11_bonus_G06|Add1~8        ; |lab11_bonus_G06|Add1~8        ; out0             ;
+; |lab11_bonus_G06|Add1~9        ; |lab11_bonus_G06|Add1~9        ; out0             ;
+; |lab11_bonus_G06|Add1~10       ; |lab11_bonus_G06|Add1~10       ; out0             ;
+; |lab11_bonus_G06|Add1~11       ; |lab11_bonus_G06|Add1~11       ; out0             ;
+; |lab11_bonus_G06|Add1~12       ; |lab11_bonus_G06|Add1~12       ; out0             ;
+; |lab11_bonus_G06|Add1~13       ; |lab11_bonus_G06|Add1~13       ; out0             ;
+; |lab11_bonus_G06|Add1~14       ; |lab11_bonus_G06|Add1~14       ; out0             ;
+; |lab11_bonus_G06|Add1~15       ; |lab11_bonus_G06|Add1~15       ; out0             ;
+; |lab11_bonus_G06|Add1~16       ; |lab11_bonus_G06|Add1~16       ; out0             ;
+; |lab11_bonus_G06|Add1~17       ; |lab11_bonus_G06|Add1~17       ; out0             ;
+; |lab11_bonus_G06|Add1~18       ; |lab11_bonus_G06|Add1~18       ; out0             ;
+; |lab11_bonus_G06|Add2~0        ; |lab11_bonus_G06|Add2~0        ; out0             ;
+; |lab11_bonus_G06|Add2~1        ; |lab11_bonus_G06|Add2~1        ; out0             ;
+; |lab11_bonus_G06|Add2~2        ; |lab11_bonus_G06|Add2~2        ; out0             ;
+; |lab11_bonus_G06|Add2~3        ; |lab11_bonus_G06|Add2~3        ; out0             ;
+; |lab11_bonus_G06|Add2~4        ; |lab11_bonus_G06|Add2~4        ; out0             ;
+; |lab11_bonus_G06|Add2~5        ; |lab11_bonus_G06|Add2~5        ; out0             ;
+; |lab11_bonus_G06|Add2~6        ; |lab11_bonus_G06|Add2~6        ; out0             ;
+; |lab11_bonus_G06|Add2~7        ; |lab11_bonus_G06|Add2~7        ; out0             ;
+; |lab11_bonus_G06|Add2~8        ; |lab11_bonus_G06|Add2~8        ; out0             ;
+; |lab11_bonus_G06|Add2~9        ; |lab11_bonus_G06|Add2~9        ; out0             ;
+; |lab11_bonus_G06|Add2~10       ; |lab11_bonus_G06|Add2~10       ; out0             ;
+; |lab11_bonus_G06|Add2~11       ; |lab11_bonus_G06|Add2~11       ; out0             ;
+; |lab11_bonus_G06|Add2~12       ; |lab11_bonus_G06|Add2~12       ; out0             ;
+; |lab11_bonus_G06|Add2~13       ; |lab11_bonus_G06|Add2~13       ; out0             ;
+; |lab11_bonus_G06|Add2~14       ; |lab11_bonus_G06|Add2~14       ; out0             ;
+; |lab11_bonus_G06|Add2~15       ; |lab11_bonus_G06|Add2~15       ; out0             ;
+; |lab11_bonus_G06|Add2~16       ; |lab11_bonus_G06|Add2~16       ; out0             ;
+; |lab11_bonus_G06|Add2~17       ; |lab11_bonus_G06|Add2~17       ; out0             ;
+; |lab11_bonus_G06|Add2~18       ; |lab11_bonus_G06|Add2~18       ; out0             ;
+; |lab11_bonus_G06|Add2~19       ; |lab11_bonus_G06|Add2~19       ; out0             ;
+; |lab11_bonus_G06|Add2~20       ; |lab11_bonus_G06|Add2~20       ; out0             ;
+; |lab11_bonus_G06|Add2~21       ; |lab11_bonus_G06|Add2~21       ; out0             ;
+; |lab11_bonus_G06|Add2~22       ; |lab11_bonus_G06|Add2~22       ; out0             ;
+; |lab11_bonus_G06|Add2~23       ; |lab11_bonus_G06|Add2~23       ; out0             ;
+; |lab11_bonus_G06|Add2~24       ; |lab11_bonus_G06|Add2~24       ; out0             ;
+; |lab11_bonus_G06|Add2~25       ; |lab11_bonus_G06|Add2~25       ; out0             ;
+; |lab11_bonus_G06|Add2~26       ; |lab11_bonus_G06|Add2~26       ; out0             ;
+; |lab11_bonus_G06|Add2~27       ; |lab11_bonus_G06|Add2~27       ; out0             ;
+; |lab11_bonus_G06|Add3~0        ; |lab11_bonus_G06|Add3~0        ; out0             ;
+; |lab11_bonus_G06|Add3~1        ; |lab11_bonus_G06|Add3~1        ; out0             ;
+; |lab11_bonus_G06|Add3~2        ; |lab11_bonus_G06|Add3~2        ; out0             ;
+; |lab11_bonus_G06|Add3~3        ; |lab11_bonus_G06|Add3~3        ; out0             ;
+; |lab11_bonus_G06|Add3~4        ; |lab11_bonus_G06|Add3~4        ; out0             ;
+; |lab11_bonus_G06|Add3~5        ; |lab11_bonus_G06|Add3~5        ; out0             ;
+; |lab11_bonus_G06|Add3~6        ; |lab11_bonus_G06|Add3~6        ; out0             ;
+; |lab11_bonus_G06|Add3~7        ; |lab11_bonus_G06|Add3~7        ; out0             ;
+; |lab11_bonus_G06|Add3~8        ; |lab11_bonus_G06|Add3~8        ; out0             ;
+; |lab11_bonus_G06|Add3~9        ; |lab11_bonus_G06|Add3~9        ; out0             ;
+; |lab11_bonus_G06|Add3~10       ; |lab11_bonus_G06|Add3~10       ; out0             ;
+; |lab11_bonus_G06|Add3~11       ; |lab11_bonus_G06|Add3~11       ; out0             ;
+; |lab11_bonus_G06|Add3~12       ; |lab11_bonus_G06|Add3~12       ; out0             ;
+; |lab11_bonus_G06|Add3~13       ; |lab11_bonus_G06|Add3~13       ; out0             ;
+; |lab11_bonus_G06|Add3~14       ; |lab11_bonus_G06|Add3~14       ; out0             ;
+; |lab11_bonus_G06|Add3~15       ; |lab11_bonus_G06|Add3~15       ; out0             ;
+; |lab11_bonus_G06|Add3~16       ; |lab11_bonus_G06|Add3~16       ; out0             ;
+; |lab11_bonus_G06|Add3~17       ; |lab11_bonus_G06|Add3~17       ; out0             ;
+; |lab11_bonus_G06|Add3~18       ; |lab11_bonus_G06|Add3~18       ; out0             ;
+; |lab11_bonus_G06|Equal0~0      ; |lab11_bonus_G06|Equal0~0      ; out0             ;
+; |lab11_bonus_G06|Equal1~0      ; |lab11_bonus_G06|Equal1~0      ; out0             ;
+; |lab11_bonus_G06|Equal2~0      ; |lab11_bonus_G06|Equal2~0      ; out0             ;
+; |lab11_bonus_G06|Equal3~0      ; |lab11_bonus_G06|Equal3~0      ; out0             ;
++--------------------------------+--------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                           ;
++--------------------------------+--------------------------------+------------------+
+; Node Name                      ; Output Port Name               ; Output Port Type ;
++--------------------------------+--------------------------------+------------------+
+; |lab11_bonus_G06|duty[0]       ; |lab11_bonus_G06|duty[0]       ; regout           ;
+; |lab11_bonus_G06|pwm_count[10] ; |lab11_bonus_G06|pwm_count[10] ; regout           ;
+; |lab11_bonus_G06|pwm_count[9]  ; |lab11_bonus_G06|pwm_count[9]  ; regout           ;
+; |lab11_bonus_G06|pwm_count[8]  ; |lab11_bonus_G06|pwm_count[8]  ; regout           ;
+; |lab11_bonus_G06|pwm_count[7]  ; |lab11_bonus_G06|pwm_count[7]  ; regout           ;
+; |lab11_bonus_G06|pwm_count[6]  ; |lab11_bonus_G06|pwm_count[6]  ; regout           ;
+; |lab11_bonus_G06|pwm_count[5]  ; |lab11_bonus_G06|pwm_count[5]  ; regout           ;
+; |lab11_bonus_G06|increase~0    ; |lab11_bonus_G06|increase~0    ; out              ;
+; |lab11_bonus_G06|duty~0        ; |lab11_bonus_G06|duty~0        ; out              ;
+; |lab11_bonus_G06|duty~1        ; |lab11_bonus_G06|duty~1        ; out              ;
+; |lab11_bonus_G06|duty~2        ; |lab11_bonus_G06|duty~2        ; out              ;
+; |lab11_bonus_G06|duty~3        ; |lab11_bonus_G06|duty~3        ; out              ;
+; |lab11_bonus_G06|duty~4        ; |lab11_bonus_G06|duty~4        ; out              ;
+; |lab11_bonus_G06|duty~5        ; |lab11_bonus_G06|duty~5        ; out              ;
+; |lab11_bonus_G06|duty~6        ; |lab11_bonus_G06|duty~6        ; out              ;
+; |lab11_bonus_G06|duty~7        ; |lab11_bonus_G06|duty~7        ; out              ;
+; |lab11_bonus_G06|duty~8        ; |lab11_bonus_G06|duty~8        ; out              ;
+; |lab11_bonus_G06|duty~9        ; |lab11_bonus_G06|duty~9        ; out              ;
+; |lab11_bonus_G06|duty~10       ; |lab11_bonus_G06|duty~10       ; out              ;
+; |lab11_bonus_G06|pwm_count[4]  ; |lab11_bonus_G06|pwm_count[4]  ; regout           ;
+; |lab11_bonus_G06|pwm_count[3]  ; |lab11_bonus_G06|pwm_count[3]  ; regout           ;
+; |lab11_bonus_G06|increase~1    ; |lab11_bonus_G06|increase~1    ; out              ;
+; |lab11_bonus_G06|duty~11       ; |lab11_bonus_G06|duty~11       ; out              ;
+; |lab11_bonus_G06|duty~12       ; |lab11_bonus_G06|duty~12       ; out              ;
+; |lab11_bonus_G06|duty~13       ; |lab11_bonus_G06|duty~13       ; out              ;
+; |lab11_bonus_G06|duty~14       ; |lab11_bonus_G06|duty~14       ; out              ;
+; |lab11_bonus_G06|duty~15       ; |lab11_bonus_G06|duty~15       ; out              ;
+; |lab11_bonus_G06|duty~16       ; |lab11_bonus_G06|duty~16       ; out              ;
+; |lab11_bonus_G06|duty~17       ; |lab11_bonus_G06|duty~17       ; out              ;
+; |lab11_bonus_G06|duty~18       ; |lab11_bonus_G06|duty~18       ; out              ;
+; |lab11_bonus_G06|duty~19       ; |lab11_bonus_G06|duty~19       ; out              ;
+; |lab11_bonus_G06|duty~20       ; |lab11_bonus_G06|duty~20       ; out              ;
+; |lab11_bonus_G06|duty~21       ; |lab11_bonus_G06|duty~21       ; out              ;
+; |lab11_bonus_G06|increase~2    ; |lab11_bonus_G06|increase~2    ; out              ;
+; |lab11_bonus_G06|duty~22       ; |lab11_bonus_G06|duty~22       ; out              ;
+; |lab11_bonus_G06|duty~23       ; |lab11_bonus_G06|duty~23       ; out              ;
+; |lab11_bonus_G06|duty~24       ; |lab11_bonus_G06|duty~24       ; out              ;
+; |lab11_bonus_G06|duty~25       ; |lab11_bonus_G06|duty~25       ; out              ;
+; |lab11_bonus_G06|duty~26       ; |lab11_bonus_G06|duty~26       ; out              ;
+; |lab11_bonus_G06|duty~27       ; |lab11_bonus_G06|duty~27       ; out              ;
+; |lab11_bonus_G06|duty~28       ; |lab11_bonus_G06|duty~28       ; out              ;
+; |lab11_bonus_G06|duty~29       ; |lab11_bonus_G06|duty~29       ; out              ;
+; |lab11_bonus_G06|duty~30       ; |lab11_bonus_G06|duty~30       ; out              ;
+; |lab11_bonus_G06|duty~31       ; |lab11_bonus_G06|duty~31       ; out              ;
+; |lab11_bonus_G06|duty~32       ; |lab11_bonus_G06|duty~32       ; out              ;
+; |lab11_bonus_G06|clk_count~0   ; |lab11_bonus_G06|clk_count~0   ; out              ;
+; |lab11_bonus_G06|clk_count~1   ; |lab11_bonus_G06|clk_count~1   ; out              ;
+; |lab11_bonus_G06|clk_count~2   ; |lab11_bonus_G06|clk_count~2   ; out              ;
+; |lab11_bonus_G06|clk_count~3   ; |lab11_bonus_G06|clk_count~3   ; out              ;
+; |lab11_bonus_G06|clk_count~4   ; |lab11_bonus_G06|clk_count~4   ; out              ;
+; |lab11_bonus_G06|clk_count~5   ; |lab11_bonus_G06|clk_count~5   ; out              ;
+; |lab11_bonus_G06|clk_count~6   ; |lab11_bonus_G06|clk_count~6   ; out              ;
+; |lab11_bonus_G06|clk_count~7   ; |lab11_bonus_G06|clk_count~7   ; out              ;
+; |lab11_bonus_G06|clk_count~8   ; |lab11_bonus_G06|clk_count~8   ; out              ;
+; |lab11_bonus_G06|clk_count~9   ; |lab11_bonus_G06|clk_count~9   ; out              ;
+; |lab11_bonus_G06|clk_count~10  ; |lab11_bonus_G06|clk_count~10  ; out              ;
+; |lab11_bonus_G06|clk_count~11  ; |lab11_bonus_G06|clk_count~11  ; out              ;
+; |lab11_bonus_G06|clk_count~12  ; |lab11_bonus_G06|clk_count~12  ; out              ;
+; |lab11_bonus_G06|clk_count~13  ; |lab11_bonus_G06|clk_count~13  ; out              ;
+; |lab11_bonus_G06|clk_count~14  ; |lab11_bonus_G06|clk_count~14  ; out              ;
+; |lab11_bonus_G06|clk_count~15  ; |lab11_bonus_G06|clk_count~15  ; out              ;
+; |lab11_bonus_G06|clk_count~16  ; |lab11_bonus_G06|clk_count~16  ; out              ;
+; |lab11_bonus_G06|clk_count~17  ; |lab11_bonus_G06|clk_count~17  ; out              ;
+; |lab11_bonus_G06|clk_count~18  ; |lab11_bonus_G06|clk_count~18  ; out              ;
+; |lab11_bonus_G06|clk_count~19  ; |lab11_bonus_G06|clk_count~19  ; out              ;
+; |lab11_bonus_G06|clk_count~20  ; |lab11_bonus_G06|clk_count~20  ; out              ;
+; |lab11_bonus_G06|clk_count~21  ; |lab11_bonus_G06|clk_count~21  ; out              ;
+; |lab11_bonus_G06|clk_count~22  ; |lab11_bonus_G06|clk_count~22  ; out              ;
+; |lab11_bonus_G06|clk_count~23  ; |lab11_bonus_G06|clk_count~23  ; out              ;
+; |lab11_bonus_G06|clk_count~24  ; |lab11_bonus_G06|clk_count~24  ; out              ;
+; |lab11_bonus_G06|clk_count~25  ; |lab11_bonus_G06|clk_count~25  ; out              ;
+; |lab11_bonus_G06|clk_count~26  ; |lab11_bonus_G06|clk_count~26  ; out              ;
+; |lab11_bonus_G06|clk_count~27  ; |lab11_bonus_G06|clk_count~27  ; out              ;
+; |lab11_bonus_G06|clk_count~28  ; |lab11_bonus_G06|clk_count~28  ; out              ;
+; |lab11_bonus_G06|clk_count~29  ; |lab11_bonus_G06|clk_count~29  ; out              ;
+; |lab11_bonus_G06|clk_count~30  ; |lab11_bonus_G06|clk_count~30  ; out              ;
+; |lab11_bonus_G06|increase~3    ; |lab11_bonus_G06|increase~3    ; out              ;
+; |lab11_bonus_G06|duty~33       ; |lab11_bonus_G06|duty~33       ; out              ;
+; |lab11_bonus_G06|duty~34       ; |lab11_bonus_G06|duty~34       ; out              ;
+; |lab11_bonus_G06|duty~35       ; |lab11_bonus_G06|duty~35       ; out              ;
+; |lab11_bonus_G06|duty~36       ; |lab11_bonus_G06|duty~36       ; out              ;
+; |lab11_bonus_G06|duty~37       ; |lab11_bonus_G06|duty~37       ; out              ;
+; |lab11_bonus_G06|duty~38       ; |lab11_bonus_G06|duty~38       ; out              ;
+; |lab11_bonus_G06|duty~39       ; |lab11_bonus_G06|duty~39       ; out              ;
+; |lab11_bonus_G06|duty~40       ; |lab11_bonus_G06|duty~40       ; out              ;
+; |lab11_bonus_G06|duty~41       ; |lab11_bonus_G06|duty~41       ; out              ;
+; |lab11_bonus_G06|duty~42       ; |lab11_bonus_G06|duty~42       ; out              ;
+; |lab11_bonus_G06|duty~43       ; |lab11_bonus_G06|duty~43       ; out              ;
+; |lab11_bonus_G06|pwm_count[2]  ; |lab11_bonus_G06|pwm_count[2]  ; regout           ;
+; |lab11_bonus_G06|pwm_count[1]  ; |lab11_bonus_G06|pwm_count[1]  ; regout           ;
+; |lab11_bonus_G06|pwm_count[0]  ; |lab11_bonus_G06|pwm_count[0]  ; regout           ;
+; |lab11_bonus_G06|led~reg0      ; |lab11_bonus_G06|led~reg0      ; regout           ;
+; |lab11_bonus_G06|pwm_count~0   ; |lab11_bonus_G06|pwm_count~0   ; out              ;
+; |lab11_bonus_G06|pwm_count~1   ; |lab11_bonus_G06|pwm_count~1   ; out              ;
+; |lab11_bonus_G06|pwm_count~2   ; |lab11_bonus_G06|pwm_count~2   ; out              ;
+; |lab11_bonus_G06|pwm_count~3   ; |lab11_bonus_G06|pwm_count~3   ; out              ;
+; |lab11_bonus_G06|pwm_count~4   ; |lab11_bonus_G06|pwm_count~4   ; out              ;
+; |lab11_bonus_G06|pwm_count~5   ; |lab11_bonus_G06|pwm_count~5   ; out              ;
+; |lab11_bonus_G06|pwm_count~6   ; |lab11_bonus_G06|pwm_count~6   ; out              ;
+; |lab11_bonus_G06|pwm_count~7   ; |lab11_bonus_G06|pwm_count~7   ; out              ;
+; |lab11_bonus_G06|pwm_count~8   ; |lab11_bonus_G06|pwm_count~8   ; out              ;
+; |lab11_bonus_G06|pwm_count~9   ; |lab11_bonus_G06|pwm_count~9   ; out              ;
+; |lab11_bonus_G06|pwm_count~10  ; |lab11_bonus_G06|pwm_count~10  ; out              ;
+; |lab11_bonus_G06|clk_count~31  ; |lab11_bonus_G06|clk_count~31  ; out              ;
+; |lab11_bonus_G06|clk_count~32  ; |lab11_bonus_G06|clk_count~32  ; out              ;
+; |lab11_bonus_G06|clk_count~33  ; |lab11_bonus_G06|clk_count~33  ; out              ;
+; |lab11_bonus_G06|clk_count~34  ; |lab11_bonus_G06|clk_count~34  ; out              ;
+; |lab11_bonus_G06|clk_count~35  ; |lab11_bonus_G06|clk_count~35  ; out              ;
+; |lab11_bonus_G06|clk_count~36  ; |lab11_bonus_G06|clk_count~36  ; out              ;
+; |lab11_bonus_G06|clk_count~37  ; |lab11_bonus_G06|clk_count~37  ; out              ;
+; |lab11_bonus_G06|clk_count~38  ; |lab11_bonus_G06|clk_count~38  ; out              ;
+; |lab11_bonus_G06|clk_count~39  ; |lab11_bonus_G06|clk_count~39  ; out              ;
+; |lab11_bonus_G06|clk_count~40  ; |lab11_bonus_G06|clk_count~40  ; out              ;
+; |lab11_bonus_G06|clk_count~41  ; |lab11_bonus_G06|clk_count~41  ; out              ;
+; |lab11_bonus_G06|clk_count~42  ; |lab11_bonus_G06|clk_count~42  ; out              ;
+; |lab11_bonus_G06|clk_count~43  ; |lab11_bonus_G06|clk_count~43  ; out              ;
+; |lab11_bonus_G06|clk_count~44  ; |lab11_bonus_G06|clk_count~44  ; out              ;
+; |lab11_bonus_G06|clk_count~45  ; |lab11_bonus_G06|clk_count~45  ; out              ;
+; |lab11_bonus_G06|clk_count~46  ; |lab11_bonus_G06|clk_count~46  ; out              ;
+; |lab11_bonus_G06|clk_count~47  ; |lab11_bonus_G06|clk_count~47  ; out              ;
+; |lab11_bonus_G06|clk_count~48  ; |lab11_bonus_G06|clk_count~48  ; out              ;
+; |lab11_bonus_G06|clk_count~49  ; |lab11_bonus_G06|clk_count~49  ; out              ;
+; |lab11_bonus_G06|clk_count~50  ; |lab11_bonus_G06|clk_count~50  ; out              ;
+; |lab11_bonus_G06|clk_count~51  ; |lab11_bonus_G06|clk_count~51  ; out              ;
+; |lab11_bonus_G06|clk_count~52  ; |lab11_bonus_G06|clk_count~52  ; out              ;
+; |lab11_bonus_G06|clk_count~53  ; |lab11_bonus_G06|clk_count~53  ; out              ;
+; |lab11_bonus_G06|clk_count~54  ; |lab11_bonus_G06|clk_count~54  ; out              ;
+; |lab11_bonus_G06|clk_count~55  ; |lab11_bonus_G06|clk_count~55  ; out              ;
+; |lab11_bonus_G06|clk_count~56  ; |lab11_bonus_G06|clk_count~56  ; out              ;
+; |lab11_bonus_G06|clk_count~57  ; |lab11_bonus_G06|clk_count~57  ; out              ;
+; |lab11_bonus_G06|clk_count~58  ; |lab11_bonus_G06|clk_count~58  ; out              ;
+; |lab11_bonus_G06|clk_count~59  ; |lab11_bonus_G06|clk_count~59  ; out              ;
+; |lab11_bonus_G06|clk_count~60  ; |lab11_bonus_G06|clk_count~60  ; out              ;
+; |lab11_bonus_G06|clk_count~61  ; |lab11_bonus_G06|clk_count~61  ; out              ;
+; |lab11_bonus_G06|increase~4    ; |lab11_bonus_G06|increase~4    ; out              ;
+; |lab11_bonus_G06|duty~44       ; |lab11_bonus_G06|duty~44       ; out              ;
+; |lab11_bonus_G06|duty~45       ; |lab11_bonus_G06|duty~45       ; out              ;
+; |lab11_bonus_G06|duty~46       ; |lab11_bonus_G06|duty~46       ; out              ;
+; |lab11_bonus_G06|duty~47       ; |lab11_bonus_G06|duty~47       ; out              ;
+; |lab11_bonus_G06|duty~48       ; |lab11_bonus_G06|duty~48       ; out              ;
+; |lab11_bonus_G06|duty~49       ; |lab11_bonus_G06|duty~49       ; out              ;
+; |lab11_bonus_G06|duty~50       ; |lab11_bonus_G06|duty~50       ; out              ;
+; |lab11_bonus_G06|duty~51       ; |lab11_bonus_G06|duty~51       ; out              ;
+; |lab11_bonus_G06|duty~52       ; |lab11_bonus_G06|duty~52       ; out              ;
+; |lab11_bonus_G06|duty~53       ; |lab11_bonus_G06|duty~53       ; out              ;
+; |lab11_bonus_G06|duty~54       ; |lab11_bonus_G06|duty~54       ; out              ;
+; |lab11_bonus_G06|pwm_count~11  ; |lab11_bonus_G06|pwm_count~11  ; out              ;
+; |lab11_bonus_G06|pwm_count~12  ; |lab11_bonus_G06|pwm_count~12  ; out              ;
+; |lab11_bonus_G06|pwm_count~13  ; |lab11_bonus_G06|pwm_count~13  ; out              ;
+; |lab11_bonus_G06|pwm_count~14  ; |lab11_bonus_G06|pwm_count~14  ; out              ;
+; |lab11_bonus_G06|pwm_count~15  ; |lab11_bonus_G06|pwm_count~15  ; out              ;
+; |lab11_bonus_G06|pwm_count~16  ; |lab11_bonus_G06|pwm_count~16  ; out              ;
+; |lab11_bonus_G06|pwm_count~17  ; |lab11_bonus_G06|pwm_count~17  ; out              ;
+; |lab11_bonus_G06|pwm_count~18  ; |lab11_bonus_G06|pwm_count~18  ; out              ;
+; |lab11_bonus_G06|pwm_count~19  ; |lab11_bonus_G06|pwm_count~19  ; out              ;
+; |lab11_bonus_G06|pwm_count~20  ; |lab11_bonus_G06|pwm_count~20  ; out              ;
+; |lab11_bonus_G06|pwm_count~21  ; |lab11_bonus_G06|pwm_count~21  ; out              ;
+; |lab11_bonus_G06|led~0         ; |lab11_bonus_G06|led~0         ; out              ;
+; |lab11_bonus_G06|duty[1]       ; |lab11_bonus_G06|duty[1]       ; regout           ;
+; |lab11_bonus_G06|duty[2]       ; |lab11_bonus_G06|duty[2]       ; regout           ;
+; |lab11_bonus_G06|duty[3]       ; |lab11_bonus_G06|duty[3]       ; regout           ;
+; |lab11_bonus_G06|duty[4]       ; |lab11_bonus_G06|duty[4]       ; regout           ;
+; |lab11_bonus_G06|duty[5]       ; |lab11_bonus_G06|duty[5]       ; regout           ;
+; |lab11_bonus_G06|duty[6]       ; |lab11_bonus_G06|duty[6]       ; regout           ;
+; |lab11_bonus_G06|duty[7]       ; |lab11_bonus_G06|duty[7]       ; regout           ;
+; |lab11_bonus_G06|duty[8]       ; |lab11_bonus_G06|duty[8]       ; regout           ;
+; |lab11_bonus_G06|duty[9]       ; |lab11_bonus_G06|duty[9]       ; regout           ;
+; |lab11_bonus_G06|duty[10]      ; |lab11_bonus_G06|duty[10]      ; regout           ;
+; |lab11_bonus_G06|increase      ; |lab11_bonus_G06|increase      ; regout           ;
+; |lab11_bonus_G06|clk_count[0]  ; |lab11_bonus_G06|clk_count[0]  ; regout           ;
+; |lab11_bonus_G06|clk_count[1]  ; |lab11_bonus_G06|clk_count[1]  ; regout           ;
+; |lab11_bonus_G06|clk_count[2]  ; |lab11_bonus_G06|clk_count[2]  ; regout           ;
+; |lab11_bonus_G06|clk_count[3]  ; |lab11_bonus_G06|clk_count[3]  ; regout           ;
+; |lab11_bonus_G06|clk_count[4]  ; |lab11_bonus_G06|clk_count[4]  ; regout           ;
+; |lab11_bonus_G06|clk_count[5]  ; |lab11_bonus_G06|clk_count[5]  ; regout           ;
+; |lab11_bonus_G06|clk_count[6]  ; |lab11_bonus_G06|clk_count[6]  ; regout           ;
+; |lab11_bonus_G06|clk_count[7]  ; |lab11_bonus_G06|clk_count[7]  ; regout           ;
+; |lab11_bonus_G06|clk_count[8]  ; |lab11_bonus_G06|clk_count[8]  ; regout           ;
+; |lab11_bonus_G06|clk_count[9]  ; |lab11_bonus_G06|clk_count[9]  ; regout           ;
+; |lab11_bonus_G06|clk_count[10] ; |lab11_bonus_G06|clk_count[10] ; regout           ;
+; |lab11_bonus_G06|clk_count[11] ; |lab11_bonus_G06|clk_count[11] ; regout           ;
+; |lab11_bonus_G06|clk_count[12] ; |lab11_bonus_G06|clk_count[12] ; regout           ;
+; |lab11_bonus_G06|clk_count[13] ; |lab11_bonus_G06|clk_count[13] ; regout           ;
+; |lab11_bonus_G06|clk_count[14] ; |lab11_bonus_G06|clk_count[14] ; regout           ;
+; |lab11_bonus_G06|clk_count[15] ; |lab11_bonus_G06|clk_count[15] ; regout           ;
+; |lab11_bonus_G06|clk_count[16] ; |lab11_bonus_G06|clk_count[16] ; regout           ;
+; |lab11_bonus_G06|clk_count[17] ; |lab11_bonus_G06|clk_count[17] ; regout           ;
+; |lab11_bonus_G06|clk_count[18] ; |lab11_bonus_G06|clk_count[18] ; regout           ;
+; |lab11_bonus_G06|clk_count[19] ; |lab11_bonus_G06|clk_count[19] ; regout           ;
+; |lab11_bonus_G06|clk_count[20] ; |lab11_bonus_G06|clk_count[20] ; regout           ;
+; |lab11_bonus_G06|clk_count[21] ; |lab11_bonus_G06|clk_count[21] ; regout           ;
+; |lab11_bonus_G06|clk_count[22] ; |lab11_bonus_G06|clk_count[22] ; regout           ;
+; |lab11_bonus_G06|clk_count[23] ; |lab11_bonus_G06|clk_count[23] ; regout           ;
+; |lab11_bonus_G06|clk_count[24] ; |lab11_bonus_G06|clk_count[24] ; regout           ;
+; |lab11_bonus_G06|clk_count[25] ; |lab11_bonus_G06|clk_count[25] ; regout           ;
+; |lab11_bonus_G06|clk_count[26] ; |lab11_bonus_G06|clk_count[26] ; regout           ;
+; |lab11_bonus_G06|clk_count[27] ; |lab11_bonus_G06|clk_count[27] ; regout           ;
+; |lab11_bonus_G06|clk_count[28] ; |lab11_bonus_G06|clk_count[28] ; regout           ;
+; |lab11_bonus_G06|clk_count[29] ; |lab11_bonus_G06|clk_count[29] ; regout           ;
+; |lab11_bonus_G06|clk_count[30] ; |lab11_bonus_G06|clk_count[30] ; regout           ;
+; |lab11_bonus_G06|clk           ; |lab11_bonus_G06|clk           ; out              ;
+; |lab11_bonus_G06|enable        ; |lab11_bonus_G06|enable        ; out              ;
+; |lab11_bonus_G06|led           ; |lab11_bonus_G06|led           ; pin_out          ;
+; |lab11_bonus_G06|LessThan0~0   ; |lab11_bonus_G06|LessThan0~0   ; out0             ;
+; |lab11_bonus_G06|LessThan0~1   ; |lab11_bonus_G06|LessThan0~1   ; out0             ;
+; |lab11_bonus_G06|LessThan0~2   ; |lab11_bonus_G06|LessThan0~2   ; out0             ;
+; |lab11_bonus_G06|LessThan0~3   ; |lab11_bonus_G06|LessThan0~3   ; out0             ;
+; |lab11_bonus_G06|LessThan0~4   ; |lab11_bonus_G06|LessThan0~4   ; out0             ;
+; |lab11_bonus_G06|LessThan0~5   ; |lab11_bonus_G06|LessThan0~5   ; out0             ;
+; |lab11_bonus_G06|LessThan0~6   ; |lab11_bonus_G06|LessThan0~6   ; out0             ;
+; |lab11_bonus_G06|LessThan0~7   ; |lab11_bonus_G06|LessThan0~7   ; out0             ;
+; |lab11_bonus_G06|LessThan0~8   ; |lab11_bonus_G06|LessThan0~8   ; out0             ;
+; |lab11_bonus_G06|LessThan0~9   ; |lab11_bonus_G06|LessThan0~9   ; out0             ;
+; |lab11_bonus_G06|LessThan0~10  ; |lab11_bonus_G06|LessThan0~10  ; out0             ;
+; |lab11_bonus_G06|LessThan0~11  ; |lab11_bonus_G06|LessThan0~11  ; out0             ;
+; |lab11_bonus_G06|LessThan0~12  ; |lab11_bonus_G06|LessThan0~12  ; out0             ;
+; |lab11_bonus_G06|LessThan0~13  ; |lab11_bonus_G06|LessThan0~13  ; out0             ;
+; |lab11_bonus_G06|LessThan0~14  ; |lab11_bonus_G06|LessThan0~14  ; out0             ;
+; |lab11_bonus_G06|LessThan0~15  ; |lab11_bonus_G06|LessThan0~15  ; out0             ;
+; |lab11_bonus_G06|LessThan0~16  ; |lab11_bonus_G06|LessThan0~16  ; out0             ;
+; |lab11_bonus_G06|LessThan0~17  ; |lab11_bonus_G06|LessThan0~17  ; out0             ;
+; |lab11_bonus_G06|LessThan0~18  ; |lab11_bonus_G06|LessThan0~18  ; out0             ;
+; |lab11_bonus_G06|LessThan0~19  ; |lab11_bonus_G06|LessThan0~19  ; out0             ;
+; |lab11_bonus_G06|LessThan0~20  ; |lab11_bonus_G06|LessThan0~20  ; out0             ;
+; |lab11_bonus_G06|LessThan0~21  ; |lab11_bonus_G06|LessThan0~21  ; out0             ;
+; |lab11_bonus_G06|LessThan0~22  ; |lab11_bonus_G06|LessThan0~22  ; out0             ;
+; |lab11_bonus_G06|LessThan0~23  ; |lab11_bonus_G06|LessThan0~23  ; out0             ;
+; |lab11_bonus_G06|LessThan0~24  ; |lab11_bonus_G06|LessThan0~24  ; out0             ;
+; |lab11_bonus_G06|LessThan0~25  ; |lab11_bonus_G06|LessThan0~25  ; out0             ;
+; |lab11_bonus_G06|LessThan0~26  ; |lab11_bonus_G06|LessThan0~26  ; out0             ;
+; |lab11_bonus_G06|LessThan0~27  ; |lab11_bonus_G06|LessThan0~27  ; out0             ;
+; |lab11_bonus_G06|LessThan0~28  ; |lab11_bonus_G06|LessThan0~28  ; out0             ;
+; |lab11_bonus_G06|LessThan0~29  ; |lab11_bonus_G06|LessThan0~29  ; out0             ;
+; |lab11_bonus_G06|LessThan0~30  ; |lab11_bonus_G06|LessThan0~30  ; out0             ;
+; |lab11_bonus_G06|LessThan0~31  ; |lab11_bonus_G06|LessThan0~31  ; out0             ;
+; |lab11_bonus_G06|LessThan0~32  ; |lab11_bonus_G06|LessThan0~32  ; out0             ;
+; |lab11_bonus_G06|LessThan0~33  ; |lab11_bonus_G06|LessThan0~33  ; out0             ;
+; |lab11_bonus_G06|LessThan0~34  ; |lab11_bonus_G06|LessThan0~34  ; out0             ;
+; |lab11_bonus_G06|LessThan0~35  ; |lab11_bonus_G06|LessThan0~35  ; out0             ;
+; |lab11_bonus_G06|LessThan0~36  ; |lab11_bonus_G06|LessThan0~36  ; out0             ;
+; |lab11_bonus_G06|LessThan0~37  ; |lab11_bonus_G06|LessThan0~37  ; out0             ;
+; |lab11_bonus_G06|LessThan0~38  ; |lab11_bonus_G06|LessThan0~38  ; out0             ;
+; |lab11_bonus_G06|LessThan0~39  ; |lab11_bonus_G06|LessThan0~39  ; out0             ;
+; |lab11_bonus_G06|LessThan0~40  ; |lab11_bonus_G06|LessThan0~40  ; out0             ;
+; |lab11_bonus_G06|Add0~0        ; |lab11_bonus_G06|Add0~0        ; out0             ;
+; |lab11_bonus_G06|Add0~1        ; |lab11_bonus_G06|Add0~1        ; out0             ;
+; |lab11_bonus_G06|Add0~2        ; |lab11_bonus_G06|Add0~2        ; out0             ;
+; |lab11_bonus_G06|Add0~3        ; |lab11_bonus_G06|Add0~3        ; out0             ;
+; |lab11_bonus_G06|Add0~4        ; |lab11_bonus_G06|Add0~4        ; out0             ;
+; |lab11_bonus_G06|Add0~5        ; |lab11_bonus_G06|Add0~5        ; out0             ;
+; |lab11_bonus_G06|Add0~6        ; |lab11_bonus_G06|Add0~6        ; out0             ;
+; |lab11_bonus_G06|Add0~7        ; |lab11_bonus_G06|Add0~7        ; out0             ;
+; |lab11_bonus_G06|Add0~8        ; |lab11_bonus_G06|Add0~8        ; out0             ;
+; |lab11_bonus_G06|Add0~9        ; |lab11_bonus_G06|Add0~9        ; out0             ;
+; |lab11_bonus_G06|Add0~10       ; |lab11_bonus_G06|Add0~10       ; out0             ;
+; |lab11_bonus_G06|Add0~11       ; |lab11_bonus_G06|Add0~11       ; out0             ;
+; |lab11_bonus_G06|Add0~12       ; |lab11_bonus_G06|Add0~12       ; out0             ;
+; |lab11_bonus_G06|Add0~13       ; |lab11_bonus_G06|Add0~13       ; out0             ;
+; |lab11_bonus_G06|Add0~14       ; |lab11_bonus_G06|Add0~14       ; out0             ;
+; |lab11_bonus_G06|Add0~15       ; |lab11_bonus_G06|Add0~15       ; out0             ;
+; |lab11_bonus_G06|Add0~16       ; |lab11_bonus_G06|Add0~16       ; out0             ;
+; |lab11_bonus_G06|Add0~17       ; |lab11_bonus_G06|Add0~17       ; out0             ;
+; |lab11_bonus_G06|Add0~18       ; |lab11_bonus_G06|Add0~18       ; out0             ;
+; |lab11_bonus_G06|Add0~19       ; |lab11_bonus_G06|Add0~19       ; out0             ;
+; |lab11_bonus_G06|Add0~20       ; |lab11_bonus_G06|Add0~20       ; out0             ;
+; |lab11_bonus_G06|Add0~21       ; |lab11_bonus_G06|Add0~21       ; out0             ;
+; |lab11_bonus_G06|Add0~22       ; |lab11_bonus_G06|Add0~22       ; out0             ;
+; |lab11_bonus_G06|Add0~23       ; |lab11_bonus_G06|Add0~23       ; out0             ;
+; |lab11_bonus_G06|Add0~24       ; |lab11_bonus_G06|Add0~24       ; out0             ;
+; |lab11_bonus_G06|Add0~25       ; |lab11_bonus_G06|Add0~25       ; out0             ;
+; |lab11_bonus_G06|Add0~26       ; |lab11_bonus_G06|Add0~26       ; out0             ;
+; |lab11_bonus_G06|Add0~27       ; |lab11_bonus_G06|Add0~27       ; out0             ;
+; |lab11_bonus_G06|Add0~28       ; |lab11_bonus_G06|Add0~28       ; out0             ;
+; |lab11_bonus_G06|Add0~29       ; |lab11_bonus_G06|Add0~29       ; out0             ;
+; |lab11_bonus_G06|Add0~30       ; |lab11_bonus_G06|Add0~30       ; out0             ;
+; |lab11_bonus_G06|Add0~31       ; |lab11_bonus_G06|Add0~31       ; out0             ;
+; |lab11_bonus_G06|Add0~32       ; |lab11_bonus_G06|Add0~32       ; out0             ;
+; |lab11_bonus_G06|Add0~33       ; |lab11_bonus_G06|Add0~33       ; out0             ;
+; |lab11_bonus_G06|Add0~34       ; |lab11_bonus_G06|Add0~34       ; out0             ;
+; |lab11_bonus_G06|Add0~35       ; |lab11_bonus_G06|Add0~35       ; out0             ;
+; |lab11_bonus_G06|Add0~36       ; |lab11_bonus_G06|Add0~36       ; out0             ;
+; |lab11_bonus_G06|Add0~37       ; |lab11_bonus_G06|Add0~37       ; out0             ;
+; |lab11_bonus_G06|Add0~38       ; |lab11_bonus_G06|Add0~38       ; out0             ;
+; |lab11_bonus_G06|Add0~39       ; |lab11_bonus_G06|Add0~39       ; out0             ;
+; |lab11_bonus_G06|Add0~40       ; |lab11_bonus_G06|Add0~40       ; out0             ;
+; |lab11_bonus_G06|Add0~41       ; |lab11_bonus_G06|Add0~41       ; out0             ;
+; |lab11_bonus_G06|Add0~42       ; |lab11_bonus_G06|Add0~42       ; out0             ;
+; |lab11_bonus_G06|Add0~43       ; |lab11_bonus_G06|Add0~43       ; out0             ;
+; |lab11_bonus_G06|Add0~44       ; |lab11_bonus_G06|Add0~44       ; out0             ;
+; |lab11_bonus_G06|Add0~45       ; |lab11_bonus_G06|Add0~45       ; out0             ;
+; |lab11_bonus_G06|Add0~46       ; |lab11_bonus_G06|Add0~46       ; out0             ;
+; |lab11_bonus_G06|Add0~47       ; |lab11_bonus_G06|Add0~47       ; out0             ;
+; |lab11_bonus_G06|Add0~48       ; |lab11_bonus_G06|Add0~48       ; out0             ;
+; |lab11_bonus_G06|Add0~49       ; |lab11_bonus_G06|Add0~49       ; out0             ;
+; |lab11_bonus_G06|Add0~50       ; |lab11_bonus_G06|Add0~50       ; out0             ;
+; |lab11_bonus_G06|Add0~51       ; |lab11_bonus_G06|Add0~51       ; out0             ;
+; |lab11_bonus_G06|Add0~52       ; |lab11_bonus_G06|Add0~52       ; out0             ;
+; |lab11_bonus_G06|Add0~53       ; |lab11_bonus_G06|Add0~53       ; out0             ;
+; |lab11_bonus_G06|Add0~54       ; |lab11_bonus_G06|Add0~54       ; out0             ;
+; |lab11_bonus_G06|Add0~55       ; |lab11_bonus_G06|Add0~55       ; out0             ;
+; |lab11_bonus_G06|Add0~56       ; |lab11_bonus_G06|Add0~56       ; out0             ;
+; |lab11_bonus_G06|Add0~57       ; |lab11_bonus_G06|Add0~57       ; out0             ;
+; |lab11_bonus_G06|Add0~58       ; |lab11_bonus_G06|Add0~58       ; out0             ;
+; |lab11_bonus_G06|Add1~0        ; |lab11_bonus_G06|Add1~0        ; out0             ;
+; |lab11_bonus_G06|Add1~1        ; |lab11_bonus_G06|Add1~1        ; out0             ;
+; |lab11_bonus_G06|Add1~2        ; |lab11_bonus_G06|Add1~2        ; out0             ;
+; |lab11_bonus_G06|Add1~3        ; |lab11_bonus_G06|Add1~3        ; out0             ;
+; |lab11_bonus_G06|Add1~4        ; |lab11_bonus_G06|Add1~4        ; out0             ;
+; |lab11_bonus_G06|Add1~5        ; |lab11_bonus_G06|Add1~5        ; out0             ;
+; |lab11_bonus_G06|Add1~6        ; |lab11_bonus_G06|Add1~6        ; out0             ;
+; |lab11_bonus_G06|Add1~7        ; |lab11_bonus_G06|Add1~7        ; out0             ;
+; |lab11_bonus_G06|Add1~8        ; |lab11_bonus_G06|Add1~8        ; out0             ;
+; |lab11_bonus_G06|Add1~9        ; |lab11_bonus_G06|Add1~9        ; out0             ;
+; |lab11_bonus_G06|Add1~10       ; |lab11_bonus_G06|Add1~10       ; out0             ;
+; |lab11_bonus_G06|Add1~11       ; |lab11_bonus_G06|Add1~11       ; out0             ;
+; |lab11_bonus_G06|Add1~12       ; |lab11_bonus_G06|Add1~12       ; out0             ;
+; |lab11_bonus_G06|Add1~13       ; |lab11_bonus_G06|Add1~13       ; out0             ;
+; |lab11_bonus_G06|Add1~14       ; |lab11_bonus_G06|Add1~14       ; out0             ;
+; |lab11_bonus_G06|Add1~15       ; |lab11_bonus_G06|Add1~15       ; out0             ;
+; |lab11_bonus_G06|Add1~16       ; |lab11_bonus_G06|Add1~16       ; out0             ;
+; |lab11_bonus_G06|Add1~17       ; |lab11_bonus_G06|Add1~17       ; out0             ;
+; |lab11_bonus_G06|Add1~18       ; |lab11_bonus_G06|Add1~18       ; out0             ;
+; |lab11_bonus_G06|Add2~0        ; |lab11_bonus_G06|Add2~0        ; out0             ;
+; |lab11_bonus_G06|Add2~1        ; |lab11_bonus_G06|Add2~1        ; out0             ;
+; |lab11_bonus_G06|Add2~2        ; |lab11_bonus_G06|Add2~2        ; out0             ;
+; |lab11_bonus_G06|Add2~3        ; |lab11_bonus_G06|Add2~3        ; out0             ;
+; |lab11_bonus_G06|Add2~4        ; |lab11_bonus_G06|Add2~4        ; out0             ;
+; |lab11_bonus_G06|Add2~5        ; |lab11_bonus_G06|Add2~5        ; out0             ;
+; |lab11_bonus_G06|Add2~6        ; |lab11_bonus_G06|Add2~6        ; out0             ;
+; |lab11_bonus_G06|Add2~7        ; |lab11_bonus_G06|Add2~7        ; out0             ;
+; |lab11_bonus_G06|Add2~8        ; |lab11_bonus_G06|Add2~8        ; out0             ;
+; |lab11_bonus_G06|Add2~9        ; |lab11_bonus_G06|Add2~9        ; out0             ;
+; |lab11_bonus_G06|Add2~10       ; |lab11_bonus_G06|Add2~10       ; out0             ;
+; |lab11_bonus_G06|Add2~11       ; |lab11_bonus_G06|Add2~11       ; out0             ;
+; |lab11_bonus_G06|Add2~12       ; |lab11_bonus_G06|Add2~12       ; out0             ;
+; |lab11_bonus_G06|Add2~13       ; |lab11_bonus_G06|Add2~13       ; out0             ;
+; |lab11_bonus_G06|Add2~14       ; |lab11_bonus_G06|Add2~14       ; out0             ;
+; |lab11_bonus_G06|Add2~15       ; |lab11_bonus_G06|Add2~15       ; out0             ;
+; |lab11_bonus_G06|Add2~16       ; |lab11_bonus_G06|Add2~16       ; out0             ;
+; |lab11_bonus_G06|Add2~17       ; |lab11_bonus_G06|Add2~17       ; out0             ;
+; |lab11_bonus_G06|Add2~18       ; |lab11_bonus_G06|Add2~18       ; out0             ;
+; |lab11_bonus_G06|Add2~19       ; |lab11_bonus_G06|Add2~19       ; out0             ;
+; |lab11_bonus_G06|Add2~20       ; |lab11_bonus_G06|Add2~20       ; out0             ;
+; |lab11_bonus_G06|Add2~21       ; |lab11_bonus_G06|Add2~21       ; out0             ;
+; |lab11_bonus_G06|Add2~22       ; |lab11_bonus_G06|Add2~22       ; out0             ;
+; |lab11_bonus_G06|Add2~23       ; |lab11_bonus_G06|Add2~23       ; out0             ;
+; |lab11_bonus_G06|Add2~24       ; |lab11_bonus_G06|Add2~24       ; out0             ;
+; |lab11_bonus_G06|Add2~25       ; |lab11_bonus_G06|Add2~25       ; out0             ;
+; |lab11_bonus_G06|Add2~26       ; |lab11_bonus_G06|Add2~26       ; out0             ;
+; |lab11_bonus_G06|Add2~27       ; |lab11_bonus_G06|Add2~27       ; out0             ;
+; |lab11_bonus_G06|Add3~0        ; |lab11_bonus_G06|Add3~0        ; out0             ;
+; |lab11_bonus_G06|Add3~1        ; |lab11_bonus_G06|Add3~1        ; out0             ;
+; |lab11_bonus_G06|Add3~2        ; |lab11_bonus_G06|Add3~2        ; out0             ;
+; |lab11_bonus_G06|Add3~3        ; |lab11_bonus_G06|Add3~3        ; out0             ;
+; |lab11_bonus_G06|Add3~4        ; |lab11_bonus_G06|Add3~4        ; out0             ;
+; |lab11_bonus_G06|Add3~5        ; |lab11_bonus_G06|Add3~5        ; out0             ;
+; |lab11_bonus_G06|Add3~6        ; |lab11_bonus_G06|Add3~6        ; out0             ;
+; |lab11_bonus_G06|Add3~7        ; |lab11_bonus_G06|Add3~7        ; out0             ;
+; |lab11_bonus_G06|Add3~8        ; |lab11_bonus_G06|Add3~8        ; out0             ;
+; |lab11_bonus_G06|Add3~9        ; |lab11_bonus_G06|Add3~9        ; out0             ;
+; |lab11_bonus_G06|Add3~10       ; |lab11_bonus_G06|Add3~10       ; out0             ;
+; |lab11_bonus_G06|Add3~11       ; |lab11_bonus_G06|Add3~11       ; out0             ;
+; |lab11_bonus_G06|Add3~12       ; |lab11_bonus_G06|Add3~12       ; out0             ;
+; |lab11_bonus_G06|Add3~13       ; |lab11_bonus_G06|Add3~13       ; out0             ;
+; |lab11_bonus_G06|Add3~14       ; |lab11_bonus_G06|Add3~14       ; out0             ;
+; |lab11_bonus_G06|Add3~15       ; |lab11_bonus_G06|Add3~15       ; out0             ;
+; |lab11_bonus_G06|Add3~16       ; |lab11_bonus_G06|Add3~16       ; out0             ;
+; |lab11_bonus_G06|Add3~17       ; |lab11_bonus_G06|Add3~17       ; out0             ;
+; |lab11_bonus_G06|Add3~18       ; |lab11_bonus_G06|Add3~18       ; out0             ;
+; |lab11_bonus_G06|Equal0~0      ; |lab11_bonus_G06|Equal0~0      ; out0             ;
+; |lab11_bonus_G06|Equal1~0      ; |lab11_bonus_G06|Equal1~0      ; out0             ;
+; |lab11_bonus_G06|Equal2~0      ; |lab11_bonus_G06|Equal2~0      ; out0             ;
+; |lab11_bonus_G06|Equal3~0      ; |lab11_bonus_G06|Equal3~0      ; out0             ;
++--------------------------------+--------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri May 17 12:41:16 2024
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off lab11_bonus_G06 -c lab11_bonus_G06
+Info: Using vector source file "C:/Users/ufem6/Desktop/lab11_bonus_G06/lab11_bonus_G06.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is       0.00 %
+Info: Number of transitions in simulation is 0
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 156 megabytes
+    Info: Processing ended: Fri May 17 12:41:16 2024
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

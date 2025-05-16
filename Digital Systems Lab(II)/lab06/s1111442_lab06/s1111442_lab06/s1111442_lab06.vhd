@@ -1,0 +1,62 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity s1111442_lab06 is
+Port( CLK,RESET,Din: in std_logic;
+		Qout: out std_logic );
+end s1111442_lab06;
+
+architecture arch of s1111442_lab06 is
+TYPE State IS (s0,s1,s2,s3);
+SIGNAL present_state : State;
+SIGNAL next_state: State;
+signal single_output : std_logic;
+
+BEGIN
+	process(CLK, RESET)
+		variable single_output : std_logic := '0';
+    begin
+        if RESET = '1' then
+            present_state <= S0;
+            single_output := '0';
+        elsif rising_edge(CLK) then
+            present_state <= next_state;
+        end if;
+    end process;
+
+	process(present_state, Din)
+    begin
+        case present_state is
+            when S0 =>
+                single_output <= '0';
+                if Din = '0' then
+                    next_state <= S0;
+                else
+                    next_state <= S2;
+                end if;
+            when S1 =>
+                single_output <= '1';
+                if Din = '0' then
+                    next_state <= S0;
+                else
+                    next_state <= S2;
+                end if;
+            when S2 =>
+                single_output <= '1';
+                if Din = '0' then
+                    next_state <= S2;
+                else
+                    next_state <= S3;
+                end if;
+             when S3 =>
+                single_output <= '0';
+                if Din = '0' then
+                    next_state <= S3;
+                else
+                    next_state <= S1;
+                end if;
+        end case;
+    end process;
+    
+    Qout <= single_output;
+end arch;

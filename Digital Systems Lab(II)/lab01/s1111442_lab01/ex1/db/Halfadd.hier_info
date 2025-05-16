@@ -1,0 +1,8 @@
+|Halfadd
+E <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+C => inst2.IN0
+B => inst9.IN0
+D => inst.IN0
+A => inst1.IN0
+
+

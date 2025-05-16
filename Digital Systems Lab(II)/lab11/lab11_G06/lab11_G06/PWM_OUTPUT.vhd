@@ -1,0 +1,36 @@
+library IEEE; 
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity PWM_OUTPUT is
+    Port ( clk : in STD_LOGIC; 
+           reset : in STD_LOGIC;
+           pwm_out : out STD_LOGIC;
+           period : in UNSIGNED(15 downto 0);
+           duty : in UNSIGNED(15 downto 0));
+end PWM_OUTPUT;
+
+architecture Behavioral of PWM_OUTPUT is
+    signal counter : unsigned(15 downto 0) := "0000000000000000";
+begin
+    process(clk, reset)
+    begin
+        if reset = '1' then
+            counter <= "0000000000000000";
+            pwm_out <= '0';
+        elsif rising_edge(clk) then
+            if counter < period then
+                counter <= counter + 1;
+            else
+                counter <= "0000000000000000";
+            end if;
+
+            if counter < duty then 
+                pwm_out <= '1'; 
+            else
+                pwm_out <= '0';
+            end if;
+        end if;
+    end process;
+end Behavioral;

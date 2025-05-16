@@ -1,0 +1,30 @@
+-- JK Flip-Flop Entity
+entity JK_FlipFlop is
+    Port (
+        J, K, Clk, Rst : in std_logic;
+        Q, Qbar : out std_logic
+    );
+end entity JK_FlipFlop;
+
+-- JK Flip-Flop Architecture
+architecture Behavioral of JK_FlipFlop is
+begin
+    process (Clk, Rst)
+    begin
+        if Rst = '1' then
+            Q <= '0';
+            Qbar <= '1';
+        elsif rising_edge(Clk) then
+            if J = '1' and K = '0' then
+                Q <= '1';
+                Qbar <= '0';
+            elsif J = '0' and K = '1' then
+                Q <= '0';
+                Qbar <= '1';
+            elsif J = '1' and K = '1' then
+                Q <= not Q;
+                Qbar <= not Qbar;
+            end if;
+        end if;
+    end process;
+end architecture Behavioral;

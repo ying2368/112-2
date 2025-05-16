@@ -1,0 +1,77 @@
+|s1111442_lab05_bonus
+Preset => myJKFF:JKFF0.Preset
+Preset => myJKFF:JKFF1.Preset
+Preset => myJKFF:JKFF2.Preset
+Preset => myJKFF:JKFF3.Preset
+Clear => myJKFF:JKFF0.Clear
+Clear => myJKFF:JKFF1.Clear
+Clear => myJKFF:JKFF2.Clear
+Clear => myJKFF:JKFF3.Clear
+Sin => myJKFF:JKFF0.J
+Sin => myJKFF:JKFF0.K
+CLK => myJKFF:JKFF0.CLK
+CLK => myJKFF:JKFF1.CLK
+CLK => myJKFF:JKFF2.CLK
+CLK => myJKFF:JKFF3.CLK
+Q[3] <= myJKFF:JKFF3.Q
+Q[2] <= myJKFF:JKFF2.Q
+Q[1] <= myJKFF:JKFF1.Q
+Q[0] <= myJKFF:JKFF0.Q
+
+
+|s1111442_lab05_bonus|myJKFF:JKFF0
+J => process_0~2.IN0
+J => process_0~1.IN0
+J => process_0~0.IN0
+K => process_0~1.IN1
+K => process_0~2.IN1
+K => process_0~0.IN1
+CLK => tmp.CLK
+Preset => tmp~2.IN0
+Clear => tmp~2.IN1
+Clear => tmp.ACLR
+Q <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|s1111442_lab05_bonus|myJKFF:JKFF1
+J => process_0~2.IN0
+J => process_0~1.IN0
+J => process_0~0.IN0
+K => process_0~1.IN1
+K => process_0~2.IN1
+K => process_0~0.IN1
+CLK => tmp.CLK
+Preset => tmp~2.IN0
+Clear => tmp~2.IN1
+Clear => tmp.ACLR
+Q <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|s1111442_lab05_bonus|myJKFF:JKFF2
+J => process_0~2.IN0
+J => process_0~1.IN0
+J => process_0~0.IN0
+K => process_0~1.IN1
+K => process_0~2.IN1
+K => process_0~0.IN1
+CLK => tmp.CLK
+Preset => tmp~2.IN0
+Clear => tmp~2.IN1
+Clear => tmp.ACLR
+Q <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|s1111442_lab05_bonus|myJKFF:JKFF3
+J => process_0~2.IN0
+J => process_0~1.IN0
+J => process_0~0.IN0
+K => process_0~1.IN1
+K => process_0~2.IN1
+K => process_0~0.IN1
+CLK => tmp.CLK
+Preset => tmp~2.IN0
+Clear => tmp~2.IN1
+Clear => tmp.ACLR
+Q <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+
+

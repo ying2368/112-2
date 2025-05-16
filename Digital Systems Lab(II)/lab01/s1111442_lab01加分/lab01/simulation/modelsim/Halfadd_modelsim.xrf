@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/user/Desktop/lab01/Halfadd.bdf
+source_file = 1, C:/Users/user/Desktop/lab01/db/Halfadd.cbx.xml
+design_name = Halfadd
+instance = comp, \E~output\, E~output, Halfadd, 1
+instance = comp, \B~input\, B~input, Halfadd, 1
+instance = comp, \D~input\, D~input, Halfadd, 1
+instance = comp, \A~input\, A~input, Halfadd, 1
+instance = comp, \C~input\, C~input, Halfadd, 1
+instance = comp, \inst8~0\, inst8~0, Halfadd, 1

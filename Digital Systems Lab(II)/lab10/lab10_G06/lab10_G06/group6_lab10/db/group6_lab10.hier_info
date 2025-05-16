@@ -1,0 +1,23 @@
+|group6_lab10
+switch[0] => LED[0].DATAIN
+switch[1] => LED[1].DATAIN
+switch[2] => LED[2].DATAIN
+switch[3] => LED[3].DATAIN
+switch[4] => LED[4].DATAIN
+switch[5] => LED[5].DATAIN
+switch[6] => LED[6].DATAIN
+switch[7] => LED[7].DATAIN
+switch[8] => LED[8].DATAIN
+switch[9] => LED[9].DATAIN
+LED[0] <= switch[0].DB_MAX_OUTPUT_PORT_TYPE
+LED[1] <= switch[1].DB_MAX_OUTPUT_PORT_TYPE
+LED[2] <= switch[2].DB_MAX_OUTPUT_PORT_TYPE
+LED[3] <= switch[3].DB_MAX_OUTPUT_PORT_TYPE
+LED[4] <= switch[4].DB_MAX_OUTPUT_PORT_TYPE
+LED[5] <= switch[5].DB_MAX_OUTPUT_PORT_TYPE
+LED[6] <= switch[6].DB_MAX_OUTPUT_PORT_TYPE
+LED[7] <= switch[7].DB_MAX_OUTPUT_PORT_TYPE
+LED[8] <= switch[8].DB_MAX_OUTPUT_PORT_TYPE
+LED[9] <= switch[9].DB_MAX_OUTPUT_PORT_TYPE
+
+

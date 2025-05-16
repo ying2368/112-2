@@ -1,0 +1,20 @@
+|s1111442_lab05
+CLK => d0.CLK
+CLK => \adder_gen:0:d.CLK
+CLK => \adder_gen:1:d.CLK
+CLK => \adder_gen:2:d.CLK
+CLK => \adder_gen:3:d.CLK
+CLK => \adder_gen:4:d.CLK
+CLK => \adder_gen:5:d.CLK
+CLK => \adder_gen:6:d.CLK
+Din => d0.DATAIN
+s[7] <= \adder_gen:6:d.DB_MAX_OUTPUT_PORT_TYPE
+s[6] <= \adder_gen:5:d.DB_MAX_OUTPUT_PORT_TYPE
+s[5] <= \adder_gen:4:d.DB_MAX_OUTPUT_PORT_TYPE
+s[4] <= \adder_gen:3:d.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= \adder_gen:2:d.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= \adder_gen:1:d.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= \adder_gen:0:d.DB_MAX_OUTPUT_PORT_TYPE
+s[0] <= d0.DB_MAX_OUTPUT_PORT_TYPE
+
+

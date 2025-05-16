@@ -1,0 +1,32 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity s1111442_lab07 is
+    Port (
+        A : in std_logic_vector(3 downto 0);
+        B : in std_logic_vector(3 downto 0);
+        sel : in std_logic_vector(1 downto 0);
+        aluo : out std_logic_vector(4 downto 0)
+    );
+end s1111442_lab07;
+
+architecture Behavioral of s1111442_lab07 is
+begin
+    process(A, B, sel)
+    begin
+        case sel is
+			when "00" =>
+                aluo <= ("0" & A) or ("0" & B); -- OR
+            when "01" =>
+                aluo <= ("0" & A) and ("0" & B); -- AND
+            when "10" =>
+                aluo <= ("0" & A) - ("0" & B); -- Subtraction
+            when "11" =>
+                aluo <= ("0" & A) + ("0" & B); -- Addition
+            when others =>
+                aluo <= ("0" & A) xor ("0" & B); -- XOR
+        end case;
+    end process;
+end Behavioral;
